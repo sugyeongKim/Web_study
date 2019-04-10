@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form tag</title>
+    </head>
+    <body>
+        <form method="post" action="#">
+            <h3>색 선택하기 (color)</h3>
+            <input type="color" valu="#238e24" 
+            onchange="document.body.style.color=this.value"><hr>
+
+        <h3>날짜 (month, week, date, datetime, time)</h3>
+        <input type="month" value="2019-03-29"/><br/>
+        <input type="week" value="2019-03-29"/><br/>
+        <input type="date" value="2019-03-29"/><br/>
+        <input type="datetime" value="2019-03-29"/><br/>
+        <input type="time" value="2019-03-29"/><br/>
+        <hr>
+        <h3>숫자입력</h3>
+        <input type="number" min="0" max="50" step="2"/>
+        <hr>
+        <h3>range범위</h3>
+        설정온도 <input type="range" min="0" max="100" list="temperature">
+        <datalist id="temperature">
+            <option value="10" label="LOW"></option>
+            <option value="50" label="MEDIUM"></option>
+            <option value="100" label="HIGH"></option>
+        </datalist>
+        <hr>
+        <h3>지속시간</h3>
+        <input type="number" min="0.0" max="10.0" step="0.5"/>
+        <br/>
+        온도설정 : 10&deg;
+        <input type="range" min="10" max="30" list ="tem">30&deg;
+        <datalist id="tem">
+                <option value="12" label="LOW"></option>
+                <option value="20" label="MEDIUM"></option>
+                <option value="28" label="HIGH"></option>
+        </datalist>
+    
+    
+    
+    
+    
+    
+    
+    
+    </form>
+    </body>
+</html>
