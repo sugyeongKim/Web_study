@@ -6,13 +6,17 @@
     <style>
         table{
             text-align: center;
-            border-color:  rgb(196, 108, 255); 
+            border-color:powderblue; 
+            background-color: white;
             font-size: 20pt;
         }
     </style>
     <body>
-        <table width="700" height="500" border="1" align="center">
-            <tr>
+        <table width="500" height="300" border="1" align="center">
+            <colgroup>
+                <col span="1" bgcolor="powderblue">
+            </colgroup>
+            <tr bgcolor="powderblue">
                 <td></td>
                 <td>월</td>
                 <td>화</td>
@@ -22,34 +26,28 @@
             </tr>
             <tr>
                 <td>1교시</td>
-                <td>DBP</td>
-                <td>JAVA</td>
+                <td rowspan="2">DBP</td>
+                <td rowspan="2">JAVA</td>
                 <td>영어</td>
                 <td>수학</td>
                 <td>영어</td>
             </tr>
             <tr>
                 <td>2교시</td> 
-                <td>DBP</td> 
-                <td>JAVA</td>
                 <td>수학</td>
                 <td>과학</td>
-                <td>WEB</td>
+                <td rowspan="2">WEB</td>
             </tr>
             <tr>
                 <td>3교시</td>
-                <td>C++</td>
+                <td rowspan="2">C++</td>
                 <td>영어</td>
-                <td>WEB</td>
-                <td>DS</td>
-                <td>WEB</td>
+                <td rowspan="2">WEB</td>
+                <td rowspan="2">DS</td>
             </tr>
             <tr>
                 <td>4교시</td>
-                <td>C++</td>
                 <td>국어</td>
-                <td>WEB</td>
-                <td>DS</td>
                 <td>과학</td>
             </tr>
             <tr>
@@ -69,14 +67,13 @@
                 <td>창체</td>
                 <td rowspan="2">CA</td>
                 <td>창체</td>
-                <td>C++</td>
+                <td rowspan="2">C++</td>
             </tr>
             <tr>
                 <td>7교시</td>
                 <td>국어</td>
                 <td>DS</td>
                 <td>JAVA</td>
-                <td>C++</td>
             </tr>
         
         </table>
