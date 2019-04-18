@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>텍스트 속성</title>
+        <style>
+        h1 + ul{ /*바로 아래 한개의 ul만 선택*/
+          color:aqua;
+          background-color: black;
+            font-size: 14pt;
+        }
+
+        h1 ~ ul{ /*바로 아래 모든 ul만 선택*/
+            font-weight: bold;
+        }
+
+        #one{
+            font-size: 1em;
+        }
+
+        #two{
+            font-size: 2em;
+        }
+
+        #three{
+            font-size:150%;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="one">
+                산토끼토끼야 어디를 가느냐<br>
+                산토끼토끼야 어디를 가느냐<br>
+           </div>
+        <div id="two">
+                산토끼토끼야 어디를 가느냐<br>
+                산토끼토끼야 어디를 가느냐<br>
+        </div>
+        <div id="three">
+                산토끼토끼야 어디를 가느냐<br>
+                산토끼토끼야 어디를 가느냐<br>
+        </div>
+
+    </body>

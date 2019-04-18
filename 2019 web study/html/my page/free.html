@@ -9,20 +9,49 @@
             }
 
             table{
-            text-align: center;
-            border-color: #252525; 
             font-size: 15pt;
-            background-color: white;           
+            background-color : #252525;           
              border-collapse: collapse;
+             background-color: white;
         }   
             </style>
     </head>
     <body>
-        <h2>자유게시판</h2>
+        <h2>٩( ᐛ )و 자유게시판 ٩( ᐛ )و</h2>
         <form method = "post" action="login.jsp">
+            <table align="center">
+                <tr>
+                    <td>제목</td>
+                    <td><input type="text" name="free" size="80"></td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" name="name" size="80"></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="text" name="password" size="80"></td>
+                </tr>
+                <tr>
+                    <td>카테고리</td>
+                    <td align="left">
+                        <input type="text" list="like">
+                            <datalist id ="like">
+                                    <option value="안부게시판"></option>
+                                    <option value="비밀글"></option>
+                                    <option value="관심사"></option>
+                                    <option value="게임"></option>
+                                </datalist>  
+                    </td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                <td><textarea cols="82" rows="20"></textarea></td>
+                </tr>
+            </table>
+            <br>
+                    <button type="button" >올리기</button>
+                    <button type="button">취소</button>
 
-                    <textarea cols="100" rows="25">자유롭게</textarea><br>
-                <button type="button">올리기</button>
-                <button type="button">취소</button>
     </body>
 </html>
