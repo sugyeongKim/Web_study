@@ -10,27 +10,29 @@
         <h4>h4</h4>
         <h5>h5</h5>
         <h6>h6</h6>
-        <b>b</b><br>
-        <strong>strong</strong><br>
-        <em>em</em><br>
-        <i>i</i><br>
-        <mark>mark</mark><br>
-        <small>small</small><br>
-        <del>del</del><br>
-        <ins>ins</ins><br>
-        위첨자<sup>sup</sup><br>
-        아래첨자<sub>sub</sub><br>
+        <b>진하게 b</b><br>
+        <strong>중요한 strong</strong><br>
+        <em>강조 em</em><br>
+        <i>이탤릭으로 강조 i</i><br>
+        <i><b>이탤릭으로 진하게 강조 i+b</b></i><br>
+        보통문자 <small>한단계 작은 문자 small</small><br>
+        <del>삭제 del</del><br>
+        <ins>추가 ins</ins><br>
+        보통문자의 <sup>윗첨자 sup</sup><br>
+        보통문자의 <sub>아랫첨자 sub</sub><br>
+        <mark>하이라이팅 mark</mark>
         <hr>
+        <!--list tag-->
         <h3>순서없는 목록</h3>
-        <ul type="desc"> <!--type="circle" 빈 원, "desc" 꽉찬 원 (기본), "square"-->
+        <ul type="disc"> <!--type="circle" 빈 원, "desc" 꽉찬 원 (기본), "square"-->
             <li>강아지</li>
             <li>고양이</li>
             <li>메인쿤</li>
         </ul>
 
         <h3>순서있는 목록</h3>
-        <ol type="A"> <!--start=“값” ex)“1”, “A”, “a”, “O”, “l”, “i”-->
-            <li>강아지</li>
+        <ol start="2" type="2"> <!--start=“시작하고자 하는 값” ex) “1”, “A”, “a”,  “l”, “i”-->
+            <li>강아지</li>     <!-- type ="원하는 기호" ex) “1” 아라비아 숫자. 기본값, “A” 대문자, “a” 소문자, “l” 로마숫자대문자, “i” 로마숫자 소문자-->
             <li>고양이</li>
             <li>메인쿤</li>
         </ol>
@@ -42,5 +44,79 @@
             <dd>내욘ㅇ</dd>
         </dl>
         <hr>
+        <!--table tag-->
+        <table border="1" width="200" height="200" bordercolor="#FF0077" summary="시험연습">
+            <caption>시험공부 caption</caption>
+            <colgroup>
+            <col span="2" bgcolor="yellow">
+            </colgroup>
+            <tr align="center">
+                <td rowspan="3">A</td>
+                <td>B</td>
+                <td colspan="2">C</td>
+
+            </tr>
+            <tr align="center">
+                <td>E</td>
+                <td>F</td>
+                <td>G</td>
+            </tr>
+            <tr align="center">
+                <td>H</td>
+                <td>I</td>
+                <td>J</td>
+            </tr>
+        </table>
+        <figure>
+            <figcaption>시험공부 figure</figcaption>
+        </figure>
+        <!--image-->
+        <img src="../img/cute.JPG" width="200" height="200" alt="귀여운 토끼" title="상대경로">
+        <img src="C:/Web_Study/2019 web study/img/cute.JPG" width="200" height="200" alt="귀여운 토끼" title="절대경로">
+        <!--input-->
+        <hr>
+        <form method="GET" action="#">
+            Text <input type="text" name="text" placeholder="placeholder"><br>
+            password <input type="password" name="password" size="15"><br>
+            submit <input type="submit" name="submit"><br>
+            radio <input type="radio" name="gender">남성
+                  <input type="radio" name="gender">여성<br>
+            checkbox<input type="checkbox" name="pet">강아지
+                    <input type="checkbox" name="pet" checked>고양이
+                    <input type="checkbox" name="pet">햄스터<br>
+            number <input type="number" min="10" max="100" step="5"><br>
+            button  <button type="submit">submit</button>
+                    <button type="reset">reset</button>
+                    <button type="button">button</button><br>
+            image   <input type="image" src ="../img/cute.JPG" width="100" height="100"/><br>
+            file    <input type="file"><br>
+            <button type = "button" onclick ="alert('경고메세지')";>
+                    누르면 창뜸
+                    </button><br>
+            textarea<textarea name="txt" id="test" cols="30" rows="10">초기값</textarea><br>
+            select <select name="choice" size="2" multiple>
+                <option value="cat">cat</option>
+                <option value="dog">dog</option>
+                <option value="cute">cute</option>
+            </select><br>
+            datalist<input type="text" list="nation">
+            <datalist id ="nation">
+                <option value="korea">한국</option>
+                <option value="U.S.A">미국</option>
+                <option value="japan">일본</option>
+                <option value="china">중국</option>
+                <option value="daeman">대만</option>
+            </datalist><br>
+            <label for="input">Input - Text</label>
+            <input type="text" id="input"><br>
+
+            <label>
+                Input - Text <input type="text">
+            </label><br>
+
+
+
+        </form>
+
     </body>
 </html>
