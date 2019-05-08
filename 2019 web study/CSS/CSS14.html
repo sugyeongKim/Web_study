@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            h3 + ul{
+                border: solid 3px #ff0077;
+                
+            }
+            
+            h3 ~ ul{
+                background-color: aqua;
+            }
+
+            [class~="button"]{
+                border: solid 4px teal;
+            }
+
+            a[title |= us]{
+                background: #ff0077;
+                border: solid 2px white;
+            }
+
+            a[title |= jap-]{
+                background: slateblue;
+                border: dotted 2px greenyellow;
+            }
+
+            a[title ^="jap"]{
+                background: darkgoldenrod;
+                border: dashed 4px aquamarine;
+            }
+
+            a[href$="hwp"]{ 
+                background: rgb(51, 151, 233);
+                border: solid 5px black;
+            }
+
+            a[href$="xls"]{
+                background: rgb(255, 230, 86);
+                border: solid 5px black;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <h3>예약 방법 및 요금</h3>
+            <ul>
+                <li>직접통화</li>
+                <li>음성 남기기</li>
+            </ul>
+            <ul>
+                <li>1인: 30000</li>
+                <li>2인: 50000</li>
+                <li>3인: 100000</li>
+            </ul>
+        </div>
+        <hr>
+        <ul>
+            <li><a href="#" target="_blank">집으로</a></li>
+            <li><a href="#" class="button">게시판</a></li>
+            <li><a href="#" class="flat_button">방명록</a></li>
+        </ul>
+        <hr>
+        <h3>외국어 서비스</h3>
+        <ul>
+            <li><a href="#" title="us">영어</a></li>
+            <li><a href="#" title="us-english">영어33</a></li>
+            <li><a href="#" title="jap-anese">일본어</a></li>
+            <li><a href="#" title="korean">국어</a></li>
+            <li><a htef="#" title="french">프랑스어</a></li>
+        </ul>
+        <hr>
+        <h4>파일서비스</h4>
+        <ul>
+            <li><a href="intro.hwp" >hwp</a></li>
+            <li><a href="intro.xls" >엑셀파일</a></li>
+        </ul>
+    </body>
+</html>

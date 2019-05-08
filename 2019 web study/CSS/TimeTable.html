@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>수업시간표</title>
+    </head>
+    <style>
+        table {
+            background-color: aquamarine;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        
+        thead{
+            border-top: solid 5px blue;
+            border-bottom: solid 5px blue;
+        }
+        
+        tfoot{
+            border-bottom: solid 5px blue;
+        }
+
+        .c0{
+            border-left: dotted 3px #ff0077;
+        }
+
+        .c4{
+            border-right: dotted 3px #ff0077;
+        }
+
+        tr{
+            height: 40px;
+        }
+        
+        tr:link, tr:visited,tr:active{
+            text-decoration-line: none;
+        }
+        tr:hover{
+            background-color:tomato;
+        }
+
+    </style>
+    <body>
+        
+        <table border="1" height="300">
+            <caption>수업시간표</caption>
+            <thead>
+            <tr bgcolor="gray">
+                <th width="100" class="c0">시간/요일</th>
+                <td width="150">월</td>
+                <td width="150">화</td>
+                <td width="150">수</td>
+                <td width="150" class="c4">목</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="c0">1</td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td rowspan="3" class="c4">CSS</td>
+            </tr>
+            <tr>
+                <td class="c0">2</td>
+                <td rowspan="2">HTML5</td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td class="c0">3</td>
+                <td> </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="c0">4</td>
+                <td> </td>
+                <td colspan="2">JavaScript</td>
+                <td class="c4"> </td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td class="c0">5</td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td class="c4"> </td>
+            </tr>
+        </tfoot>
+        </table>
+
+    </body>
+</html>
