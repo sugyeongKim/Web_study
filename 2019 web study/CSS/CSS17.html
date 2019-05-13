@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>border-radius 속성</title>
+        <!--p에 배경색 적용, width 300 padding 20-->
+        <style>
+            p{
+                background-color: #FF0077;
+                width: 250px;
+                padding:20px;
+            }
+            #r1{
+                border-radius: 50px;
+            }
+
+            #r2{
+                border-radius: 0 20px 40px 60px;
+            }
+
+            #r3{
+                border-radius: 0 20px 40px 20px;
+            }
+
+            #r4{
+                border-radius: 0 20px 0 20px;
+            }
+
+            #r5{
+                border-radius: 50%;
+            }
+
+            #r6{
+                width:100px;
+                height:100px;
+                border-radius: 50%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h3>둥근 모서리 테두리</h3>
+        <hr>
+        <p id="r1">반지름 50px의 모서리</p>
+        <p id="r2">반지름 0, 20, 40, 60의 모서리</p>
+        <p id="r3">반지름 0, 20, 40, 20의 모서리</p>
+        <p id="r4">반지름 0, 20, 0, 20의 모서리</p>
+        <p id="r5">반지름 50의 모서리</p>
+        <p id="r6"></p>
+    </body>
+</html>
