@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>회원가입 페이지</title>
+        <style>
+
+            table{
+                width:1000px;
+                height:450px;
+                border-collapse: collapse;
+                border:1px solid rgb(216, 216, 216);
+            }
+
+            td{
+                padding-left:7px;
+            }
+            .one{
+                width:150px;
+                background-color: black;
+                color:white;
+                padding-left:7px;
+            }
+
+            #button{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1" align="center">
+            <tr>
+                <td class="one"> 이름</td>
+                <td><input type="text"></td>
+                <td class="one"> 생년월일</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="one">아이디</td>
+                <td><input type="text"></td>
+                <td class="one">비밀번호</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td class="one">이메일</td>
+                <td><input type="email"></td>
+                <td class="one">비밀번호 확인</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td class="one">주소</td>
+                <td>
+                    <select name="add">
+                            <option value="1">서울특별시</option>
+                            <option value="2">경기도</option>
+                            <option value="3">강원도</option>
+                            <option value="4">경상도</option>
+                            <option value="5">충청도</option>
+                    </select>
+                    <input type="text" placeholder="상세주소">
+                </td>
+                <td class="one">성별</td>
+                <td>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Fmale
+                </td>
+            </tr>
+            <tr>
+                <td class="one">연락처</td>
+                <td><input type="tel"></td>
+                <td class="one">정보수신</td>
+                <td>
+                    <input type="checkbox" name="info">이메일
+                    <input type="checkbox" name="info">SMS
+                </td>
+            </tr>
+            <tr>
+                <td class="one">메모</td>
+                <td colspan="3"><textarea rows=5 cols=100 name="txt" placeholder="메모를 남겨주세요"></textarea></td>
+            </tr>
+        </table>
+        <div id="button">
+                <br><button type="reset">취소</button> &nbsp; &nbsp;
+                <button type="submit">등록</button><br>
+        </div>
+    </body>
+</html>

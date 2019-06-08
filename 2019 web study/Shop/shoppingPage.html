@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>쇼핑몰</title>
+        <style>
+            body{
+                
+            }
+
+
+            #header{
+                height:120px;
+                line-height: 120px;
+                text-align: center; 
+                background-color: aquamarine;
+                font-size: 30px;
+                text-shadow: -2px 0 black,
+                                0 2px black,
+                                2px 0 black,
+                                0 -2px black;
+                color: white;
+            }
+
+            #menu{
+                display: inline-block;
+                width:15%;
+                height:540px;
+                background-color: skyblue;
+                float: left;
+
+            }
+
+            #content{
+                display: inline-block;
+                width:70%;
+                height:540px;
+
+            }
+
+            #aside{
+                display: inline-block;
+                width:15%;
+                height:540px;
+                float: right;
+                background-color: skyblue;
+                text-align: center;
+            }
+
+            #footer{
+                display: inline-block;
+                float: left;
+                width:100%;
+                height:80px;
+                background-color: aquamarine;
+            }
+
+            .menu1{
+                text-align: center;
+                height: 108px;
+                line-height: 108px;
+                font-size: 20px;
+                background-color: skyblue;
+                text-shadow: -2px 0 black,
+                                0 2px black,
+                                2px 0 black,
+                                0 -2px black;
+                color: white;
+            }
+
+            .menu1:hover{
+                background-color: darkcyan;
+            }
+
+             a:link, a:visited,a:hover,a:active{
+            text-decoration-line: none;
+            color:white;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header"><a href="basePage.html" target="iframe">Shop★</a></div>
+            <div id="menu">
+                <div class="menu1"><a href="joinPage.html" target="iframe">회원가입</a></div>
+                <div class="menu1"><a href="MyPage.html" target="iframe">마이페이지</a></div>
+                <div class="menu1"><a href="All_products.html" target="iframe">전체상품보기</a></div>
+                <div class="menu1"><a href="Recommend.html" target="iframe">추천상품</a></div>
+                <div class="menu1"><a href="basket.html" target="iframe">장바구니</a></div>
+            </div>
+            <div id="content">
+                <iframe src="basePage.html" frameborder="0" name="iframe" width="100%" height="540px"></iframe>
+            </div>
+            <div id="aside">광고
+                <iframe src="http://justdancenow.com/" frameborder="0" width="200px"></iframe><br>
+                <iframe src="https://lhs501.github.io/2019java/2019java.html#download" frameborder="0" width="200px"></iframe>
+                <iframe src="https://justdancenow.com/" frameborder="0" width="200px"></iframe>
+            </div>
+            <div id="footer">푸터</div>
+
+        </div>
+    </body>
+</html>

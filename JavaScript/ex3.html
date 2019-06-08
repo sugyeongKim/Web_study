@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        </title>
+        <style>
+        p{
+            font-size: 9pt;
+        }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="night"  onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color='white';
+        ">
+        <input type="button" value="day"  onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color='black';
+        ">
+        <input type="button" value="black" onclick="
+        if(document.querySelector('body').dataset.mode === 'day'){
+            document.querySelector('body').style.background = 'black';
+            document.querySelector('body').style.color='white';
+            document.querySelector('body').dataset.mode = 'night';
+            this.value = 'day';
+        } else {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color='black';
+            document.querySelector('body').dataset.mode='day';
+            this.value='night';
+        }
+        ">
+        <p>
+            처음부터 다시 시작한다면<br>
+            행복한 결말의 이야기가 될까<br>
+            아니 서로 만나지 않았다면<br>
+            다른 곳에서 웃고 있었을까<br>
+            <br>
+            어렴풋이 보이는 어둠을 애써 외면하고서<br>
+            불빛을 따라 걷고 있다고 나는 믿고 있었어<br>
+            결국 절망이었어 앞이 보이지 않아<br>
+            알면서도 그래 멈출 수가 없었잖아<br>
+            <br>
+            사랑이 온 세상을 삼켜버렸어<br>
+            깊은 구덩이 속에 밀어버렸어<br>
+            우리는, 너는, 나는 아무것도 할 수 없어<br>
+            천천히 눈을 감겠지<br>
+            <br>
+            덫에 걸려 베인 상처들을 애써 외면하고서<br>
+            구원을 따라 걷고 있다고 너도 믿고 있었니<br>
+            결국 고통이었어 피가 그치지 않아<br>
+            알면서도 그래 멈출 수가 없었잖아<br>
+            <br>
+            사랑이 온 세상을 삼켜버렸어<br>
+            시린 겨울 밤 속에 가둬버렸어<br>
+            우리는, 너는, 나는 아무것도 할 수 없어<br>
+            끝없이 추락하겠지<br>
+            <br>
+            사랑이 우리를 우리들을 죽였어<br>
+            옅은 숨결까지도 모두 앗아갔어<br>
+            아무리 몸부림을 쳐도 벗어날 수 없어<br>
+            아침은 다시 없겠지<br>
+            <br>
+        </p>
+    </body>
+</html>
