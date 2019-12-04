@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <script>
+        function change() {
+            var sel = document.getElementById("sel");
+            var img = document.getElementById("myimg");
+            var v = sel.options[sel.selectedIndex].value;
+            img.src = v;
+
+            var size = document.getElementById("size");
+            document.getElementById("size").innerHTML = img.width + "x" + img.height;
+        }
+    </script>
+</head>
+
+<body onload="change()">
+
+    <select id="sel" onchange="change()">
+        <option value=" ../2019 web study/img/cute.JPG">귀여운 </option>
+        <option value="../2019 web study/img/five.JPG">5마리</option>
+        <option value="../2019 web study/img/two.JPG">2마리</option>
+        <option value="../2019 web study/img/rabbit.JPG">토끼</option>
+    </select>
+    <span id="size">이미지 크기</span>
+    <br>
+    <img src="../2019 web study/img/five.JPG" id="myimg" width="550px" height="550px">
+</body>
+
+</html>

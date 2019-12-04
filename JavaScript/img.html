@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+            function change(){
+               var img = document.getElementById("myimg");
+                img.src="../2019 web study/img/cute.JPG";
+                alert("width: "+img.width+", height: "+img.height);
+            }
+        </script>
+        <style>
+        #b{
+            width:60px;
+            background-color: black;
+            color: white;
+        }
+        </style>
+    </head>
+
+    <body>
+        <img src="../2019 web study/img/five.JPG" id="myimg" width="150px" height="150px">
+        <input type="button" id = "b" name="" value="클릭" onclick='change()'>
+    </body>
+</html>
