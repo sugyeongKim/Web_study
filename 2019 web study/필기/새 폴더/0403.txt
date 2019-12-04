@@ -1,0 +1,54 @@
+10. fieldset
+-묶음
+-legend와 세트
+
+11. <input> 태그의 속성
+<input type="text"  required /> : 무조건 입력
+-disabled: 삽입 불가능
+-autofocus: 자동으로 입력할 수 있게 깜빡깜빡
+<input type="email" placeholder="abc@e-mirim.hr" />
+-placeholder: 입력힌트
+<input type="search" autocomplete="on|off" />
+-autocomplete: 자동완성기능
+----------------------------------------------------------
+<<<<CSS
+-Cascading Style Sheet
+-html문서의 색이나 모양등 디자인 변경
+-현재는 CSS3
+-기능 : 색상, 배경, 텍스트, 폰트, 박스모델(box model), position
+
+h3 {color:green; font-size:30px;}
+-selector: HTML에 CSS를 적용하도록 만든 이름
+-속성: 스타일 속성 이름
+-값: 속성의 값
+-주석: //, /*...*/
+-대소문자 구분 없음
+
+1. css를 삽입하는 방법
+1) <head> </head>사이에 넣음
+2) .css 파일을 따로 만들어서 불러오는 방법
+(link href  /@import)
+3) 인라인으로 만드는 방법 
+-> 태그 안에 직접 삽입하는 방법
+ <p style="color:red;background-color:yellow;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+6. 형제선택자
+
+1) 인접형제선태자
+: 형제중에서 한 개의 요소에만 스타일 적용
+h1 + p
+: h1밑의 한개의 p태그에만 스타일 적용
+
+2) 연결형제선택자
+: 형제중에서 모든 요소에 스타일 적용
+h1 ~ p
+: h1밑의 모든 p태그에 스타일 적용
+-------------------------------------------------------
+<< 색상코드
+1) 영문자: red, blue
+2) 16진수 코드 : #ff0000, #ff00ff....
+3) rgb 컬러: rgb(136,225,180)
+
+div {color: red;}
+div {color: #ff0000;}
+div{color: rgb(255,0,0);}
+-------------------------------------------------------
+<<텍스트관련 속성
+-절대크기: px, cm, mm, pt, inch
+-상대크기: em(2em: 기본의 2배), %(150%: 기본의 1.5배)
+-기본글자크기 : 크롬 텍스트 16pt
+-text-indent: 들여쓰기
+-text-align: left/center/right
+-text-decoration: none / underline/ overline / line-through
+-text-transform: uppercase / lowercase /capitalize
+-letter-spacing: 글자간격(자간)
+-word-spacing: 단어간격
+-line-height: 줄간격
+
+
+
+
+
+
+
+
+
+
+
+
+

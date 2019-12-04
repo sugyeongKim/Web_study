@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body{text-align: center;}
+            table{text-align: center;
+                    margin:0 auto;}
+            #first{color:red;}
+            #second{color:blue;}
+            #third{color:green;}
+        </style>
+    </head>
+    <body>
+        <h2>자바스크립트에서 html요소에 접근하는 방법</h2>
+        <table>
+            <tr>
+                <td id="first">첫번째 정수 </td>
+                <td><input type="text" id="x"></td>
+            </tr>
+            <tr>
+                <td id="second">두번째 정수 </td>
+                <td><input type="text" id="y"></td>
+            </tr>
+            <tr>
+                <td id="third">총합 </td>
+                <td><input type="text" id="sum"></td>
+            </tr>
+            
+            <tr>
+                <td colspan="1"><button type="button" onclick="calc()">계산</button><button type="reset">취소</button></td>
+                <td></td>
+            </tr>
+        </table>
+        <script>
+        function calc(){
+           var x = document.getElementById("x").value;
+           var y = document.getElementById("y").value;
+           document.getElementById("sum").value = parseInt(x)+parseInt(y);
+        }
+        </script>
+    </body>
+</html>

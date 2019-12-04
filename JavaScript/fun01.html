@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+
+        <button type="button" onclick="sum()">n부터 m까지</button><br/>
+        <button type="button" onclick="dan()">구구단</button>
+        <table>
+                <tr>
+                    <td id="first">x </td>
+                    <td><input type="text" id="x"></td>
+                </tr>
+                <tr>
+                    <td id="second">y</td>
+                    <td><input type="text" id="y"></td>
+                </tr>
+                 <tr>
+                <td id="third">총합 </td>
+                <td><input type="text" id="sum"></td>
+            </tr>
+            </table>        
+            <button type="button" onclick="add()">x+y</button> <br/>            
+            
+            최대값<input type="text" id="max">
+            <button type="button" onclick="arr()">계산</button><button type="reset">취소</button>
+        <script>
+
+        var arr = function(){
+            var max=0;
+            var arr = new Array();
+            for(var i=0;i<5;i++){
+                arr[i] =parseInt(prompt("값 입력 "))
+            }
+            
+            for(var i = 0;i<5;i++){
+                if(a[i]> max)
+                max=a[i]
+            }
+
+            document.write(max);
+        }
+
+        function add(){
+            //var x = parseInt(prompt("x를 입력해주세요"))
+            //var y = parseInt(prompt("y를 입력해주세요"))
+           // alert("x + y = "+(x+y))
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            document.getElementById("sum").value = parseInt(x)+parseInt(y);
+        }
+
+        function sum(){
+            var sum=0
+            var n = parseInt(prompt("n을 입력해주세요"))
+            var m = parseInt(prompt("m을 입력해주세요"))
+            for(var i = n;i<=m;i++){
+                sum+=i
+            }
+            alert(n+"부터 "+m+"까지의 합: "+sum)
+        }
+
+        function dan(){
+            var n = parseInt(prompt("단을 입력해주세요"))
+            for(var i = 1 ; i <= 9 ; i++){
+                document.writeln(n+"*"+i+"="+i*n+"<br/>");
+            }
+        }
+        </script>
+    </body>
+</html>

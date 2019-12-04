@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+        function up(obj){
+            obj.style.color="red";
+        }
+
+        function down(obj){
+            obj.style.color="blue";
+        }
+
+        function over(obj){
+            obj.style.fontSize="30pt";
+        }
+
+        function wheel(e, obj){
+        if(e.wheelDelta < 0)
+            console.log("스크롤 다운");
+        else 
+            console.log("스크롤 업");
+        }
+
+        </script>
+    </head>
+    <body>
+        <h3>마우스 관련 이벤트 리스너</h3>
+        <hr>
+        마우스 관련 <span onmouseup="up(this)"
+                         onmousedown="down(this)"
+                        onmouseover="over(this)"
+                        onwheel="wheel(event,this)">이벤트</span>가 발생합니다
+    </body>
+</html>

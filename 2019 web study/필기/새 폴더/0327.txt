@@ -1,0 +1,54 @@
+<<웹 폼 작성하기
+
+-사용자 입력받는 폼 생성
+
+<form method="post" action="login.jsp">
+ 1) method 방식:  
+   -get: url뒤에 정보가 딸려가는 방식  (검색)
+       http://localhost:8080/login.jsp?id=a&pass=1234
+
+   -post: url뒤에 정보 안나타남(로그인)
+//action: 내가 폼을 넘겼을 때 처리해주는 파일이나 사이트 주소
+
+<input type="text" name="user_id" value="abc"   size="15" />
+  - value: 초기값
+  - size: 글자수
+  - name : 변수
+
+1. <input type="......">
+1) text
+2) password
+3) submit: 전송, 제출
+4) reset: 취소하고 재입력
+5) radio:  한 개만 선택 가능 name은 반드시 동일
+   - checked: 문서 실행시 미리 체크되어 있음
+6) checkbox: 여러 개 선택 가능 /name이 동일
+7) file: 자료실 만들때, 파일올리기 할 때
+
+<a href="http://www.naver.com"><img src="img/lion1.jpg"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+    

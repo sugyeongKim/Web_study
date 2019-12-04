@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <h3>1부터 100사이의 난수 10개를 생성하여 배열에 저장하고 배열에 저장된 수중 가장 큰 수를 출력</h3>
+        <hr>
+       
+        <script>
+        var rand = new Array();
+        var max=0, temp;
+        for(var i=0;i<10;i++){
+            var r=Math.floor(Math.random()*100+1);
+            rand[i]=r;
+        }
+        
+        for(var i = 0;i<10;i++){
+            document.write(rand[i]+" ");
+        }
+
+        document.write("<hr> <h2>제일 큰 수</h2>");
+        for(var i=0;i<10;i++){
+            if(max < rand[i]){
+                max=rand[i];
+            }
+        }
+        document.write(max+"<hr>");
+
+        rand.sort();
+        
+        for(var i = 0;i<10;i++){
+            document.write(rand[i]+" ");
+        }
+
+        </script>
+    </body>
+</html>

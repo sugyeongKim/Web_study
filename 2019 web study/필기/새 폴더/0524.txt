@@ -1,0 +1,4 @@
+* float속성은 상속되는 속성이 있음
+* 배치가 내가 원하는 대로 안됨
+* 상속해제 
+clear:left   /clear:right  /clear:both

@@ -1,0 +1,291 @@
+CSS
+-Cascading Style Sheet
+-html 문서의 색이나 모양등 디자인 변경
+-현재는 우리 CSS3 사용
+-기능 : 색상, 배경, 텍스트, 폰트, 박스모델(box model), position
+
+h3 {
+     color : green; font-size : 30px
+}
+
+selector { 속성 : 값; 속성 : 값; }
+
+selector : HTML에 CSS를 적용하도록 만든 이름 (ex, 태그, 클래스, 아이디 등등)
+속성 : 스타일 속성 이름
+값 : 속성의 값
+주석 : // , /* */
+대소문자 구분 없음
+
+1. CSS를 삽입하는 방법
+
+1) <head> </head> 사이에
+2) .css 파일을 따로 만들어서 불러오는 방법  => 여러군데에서 사용가능
+	(link href / @import)
+3) 인라인으로 만든느 방법
+--> 태그 안에 직접 삽입하는 방법
+
+2. selector의 종류
+1) 태그
+2) 클래스
+- .class 이름으로 정의
+- 적용 : class=클래스이름
+- 여러 개 적용할 수 있다.
+
+3) ID
+- #아이디 이름 
+- 적용 : id= 아이디이름
+- 아이디는 한개만 적용할 수 있다.
+
+DOM 구조 -> 계층구조
+(Document Object Model)
+html
+head
+body
+h3 -  div		
+       div - ul - div
+	 li
+
+4) 자식 셀렉터 / 자손셀렉터
+-자식 셀렉터: 내 바로 아래에 있는 자식만 선택
+ div > ul
+-자손 셀렉터: 내 아래에 있는 모든 자식이 선택
+ div    ul
+
+5) 가상셀렉터
+- 태그: 셀렉터이름
+-a:link (링크) 밑줄 X 글자색
+-a:visited (방문하고 난 후) 밑줄 X 글자색
+-a:hover (마우스 올라갔을때) 밑줄 ㅇ 글자색
+-a:active (마우스 눌렀을때) 밑줄 ㅇ 글자 크기 기본보다 더 크게
+
+-first-letter : 첫번쩨 글자
+-first-line : 첫번째 줄
+-firt-child : 첫번째 자식
+-last-child : 마지막 자식
+-nth-child(n) : n번째 자식
+-nth-last-child(n): 마지막에서 n번째 자식
+
+meta - 홈페이지에 대한 설명
+
+6) 형제 선택자
+ -1) 인접형제선택자
+	:형제중에서 한개의 요소에만 스타일 적용
+	h1 + p
+	:h1 밑 한개의 p태그에만 스타일 적용 
+-2) 연결형제선택자
+	:형제중에서 모든 요소에 스타일 적용
+	h1 ~ p
+	:h1 밑의 모든 p 태그에 스타일 적용
+============================================
+<< 색상코드
+1) 영문자 : red, blue;
+2) 16진수 코드 : #ff0000, #ff00ff #252525 #141414....
+3) RBG 컬러 : rgb(136,255,180)
+
+div {color: red}
+div {color: #ff0000}
+div {color: rbg(255,0,0)}
+
+<< 텍스트 관련 속성
+-절대크기: px, cm, mm, pt, inch
+-상대크기 em(2em : 기본의 2배), % ( 150% : 기본의 1.5배)
+-기본글자크기 : 크롬 텍스트-16pt
+- text-indent: 들여쓰기
+- text-align: left/center/right
+- text-decoration: none / underline / overline / line-throungh
+- text-transform: uppercase / lowercase / capitalize 
+	(대->소, 소->대, 앞글자만 대문자)
+- letter-spacing: 글자간격(자간)
+- word-spacing: 단어간격
+- line-height: 줄간격
+
+-color: 글자색상
+-font-size: 글자크기
+-font-family: 글자체
+-font-weight: 글자두께
+-font-style: italic 글자 스타일
+-font: italic bold 16pt "돋움";
+
+** 다단
+-column-count: 단 개수
+-column-gap: 30px 간격
+-column-rule: 2px solid red 구분선 
+
+============================================
+2. 배경관련 속성
+1) background-color : 배경색
+2) background-image: url("이미지의 위치")
+3) background-repeat: no-repeat / repeat-x / repeat-y / repeat
+4) background-attachment: fixed / scroll
+5) background-position : left, top, right, bottom (배경의 시작위치)
+
+ex) body{
+background: blue "bg.jpg" repeat-y left top scroll
+}
+============================================
+3. border 관련 속성
+border-width:
+border-style: 종류 (solid/dotted/dashed/double/groove/ridge/inset/outset)
+border-color: 색상
+   border: 2px solid red;
+1) border-style: dotted dashed solid
+
+============================================
+<<list 관련 속성
+1,  list-style-type: disc/ circle/square/lower-roman/upper0roman/lower-alpha/upper-alpha/ none
+2. list-style-image:url(그림위치)
+3.list-style-position:마커 위치 지정(inside/outside)
+============================================
+<< 속성 선택자
+1. 인접형제 선택자 ( + )
+   h3 + ul : 바로뒤에 있는 요소만 선택
+2. 일반 형제 선택자 ( ~ )
+   h3 ~ ul : 뒤에 있는 모든 요소가 선택
+
+2) [속성~ =값] 선택자
+: 해당 값이 포함되어 있는 요소를 찾아서 스타일 적용
+[class~ ="button"] : class에 button이 포함되어있어야 스타일 적용
+
+3. [속성 |= 값] 선택자
+: 해당 값이 포함된 속성을 가진 요소를 찾아 스타일 적용
+  값, 값-
+
+4. [속성^=값] 선택자
+: 해당 값으로 시작되는 속성을 가진 요소를 찾아 스타일 적용
+a[title^="jap"]
+
+5. [속성$=값] 선택자
+: 해당 값으로 끝나는 요소를 찾아 스타일 적용
+a[title$="hwp"]{ }
+
+============================================
+<<그림자 효과( box-shadow / text-shadow)
+1. box-shadow
+-수평-오프셋/수직-오프셋: 그림자의 수평 수직 위치(5px 5px)
+-크기, 번짐정도: 10px 
+-색상: 그림자 색상
+
+height랑 line-height가 같아야 세로로 중앙에잇음
+
+2. text-shadow
+text-shadow: 수직 수평 blur-radius, color | none
+
+<<border-radius
+-사각형의 둥근정도
+-top-left-x, top-rigt-x, bottom-rigt-x, bottom-left-x /
+  top-left-y, top-rigt-y, bottom-rigt-y, bottom-left-y
+.a{		x	/	y
+border-radius: 5px 3px 2px 1px / 2px 1px 3px 4px
+}
+
+border-radius: 20px (모든 모서리가 20px)
+border-radius: 1px 2px 3px 4px (왼쪽 탑부터 시작해서 시계방향으로)
+border-radius: 20px 50px; ==> 20px 50px 20xp 50px 대각선으로 일치
+
+==============================================
+<< box model
+-HTML태그는 모두 박스로 이루어짐
+padding_ content하고 테두리사이의 간격
+margin content 와 다른 content 사이의 간격
+
+1. 블록박스 모델 (block-box) -> 상하좌우 여백(margin) 조절가능
+	- 한줄에 하나의 요소만 포함(세로 배치)
+	- p, div, hr, h숫자, ul, ol, table
+	- 상하좌우 margin 지정가능하고 적용
+	- 상하좌우 padding 지정가능하고 적용
+	- width를 지정하지않으면 자동으로 기본 너비값 100%	
+
+
+2. 인라인박스 모델 (inline-box) -> 상하 여백 조절 XX
+	- 한줄에 여러개의 요소 포함(가로배치)
+	- a, span, input
+	- 상하 margin은 안됨 / 좌우 margin은 적용가능
+	- 상하좌우 padding 지정가능하고 적용
+	- width, height 적용 XX
+
+3. 인라인 블록 (inline-block) : 블록박스를 가로로 배치
+	-img
+	- width, height 적용 XX
+	- 상하좌우 margin, 상하좌우 padding 모두 적용이 됨
+	- 인라인 요소지만, 블록요소의 특성을 모두 가짐
+
+** 배치변경
+1) display: block/inline/none
+    -여백 생성
+2) float: left / right
+    -여백 XX
+
+box-sizing
+content-box(기본)
+border-box
+
+
+=================================================
+1. 박스 내부의 중앙정렬
+가로의 중앙정렬: text-align:left/center/right
+세로의 중앙정렬: height == line-height 동일하게 설정
+
+2. 문서가 항상 브라우저의 중앙에 배치되는 정렬.
+-1. <div>를 이용해서 전체를 블록박스로 지정
+<body>
+<div>
+~
+~
+</div>
+</body>
+-2. div의 width속성 지정하고
+margin:0 auto
+
+==================================================
+<< positioning(배치)
+1. float: left / right
+부모를 기준으로 왼쪽 또는 오른쪽으로 배치.
+: 세로배치를 가로로 만드는 것
+
+1)display:inline
+2)float:left
+
+> float속성은 상속되는 속성이 있다.
+>그래서 배치가 내 맘대로 안됨
+>그래서 상속을 해제시켜줘야한다.
+clear : left / clear : right / clear : both 많이 쓰는건 both
+
+
+<<position
+float:left
+1. static : 모바일화면 작성시 사용
+*2. relative : 상대적인; 기준위치 : 부모 또는 자신의 원래 위치
+	부모는 relative, 자식은 absolute
+*3. absolute : 절대적인
+4. fixed : 고정
+
+# left, top, right, bottom은 position 속성을 사용해야 적용가능
+ex)
+div{ 
+position : absolute;
+    left: 30px;
+    top: 50px;
+}
+-------------------------------------------------------------------------------
+4. fixed
+-fontawesome cdn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

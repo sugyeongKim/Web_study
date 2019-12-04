@@ -1,0 +1,72 @@
+<<그림자 효과( box-shadow /text-shadow)
+1. box-shadow
+-수평-오프셋/수직-오프셋: 그림자의 수평 수직 위치(5px 5px)
+-크기 , 번짐정도: 10px
+-색상: 그림자 색상
+
+2. text-shadow
+text-shadow: 수직, 수평, blur-radius, color | none
+1) b1: 2px 2px
+2) b2: 2px 2px blue;
+3) b3: 2px 2px 6px gray;
+4) b4: 0 0 3px #0000ff, 0 0 5px #ff0000
+5) b5: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue
+6) b6: -2px 0 black, 0 2px black, 0 -2px yellowgreen 
+ #b7 { text-shadow: 0 0 3px #0000FF, 0 0 5px #FF0000; } 
+ #b8 { text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;  color: white; }  
+ #b9 { text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;  color: orange;  } 
+----------------------------------------------------------------------------------
+
+<<border-radius
+-사각형의 둥근 정도
+: top-left-x , top-right-x,  ..8개 입력
+
+.a{
+border-radius: 5px 3px 2px 1px /1px 2px 3px 4px;
+}
+border-radius: 20px; 모든 모서리가 20px;
+border-radisu: 1px 2px 3px 4px: 왼쪽 top부터 시작해서 시계방ㅎㅇ
+border-radius:20px 50px;   ==> 20px 50px 20px 50px 대각선으로 일치
+---------------------------------------------------------------------------------------<<box model
+-HTML태그는 모두 박스로 이루어짐 
+1. 블록박스
+- 한 줄에 하나의 요소만 포함 (세로배치)
+- div, h숫자, p, ul, ol,table
+- 상하좌우 margin 지정가능하고 적용
+- 상하좌우 padding 지정가능하고 적용
+- width를 지정하지 않ㅇ면 자동으로 기본 너비값100%값
+
+2. 인라인박스
+- 한줄에 여러개의 요소 포함(가로배치)
+- a, img, span, input,
+- 상하maring은 안됨 /좌우 margin 은 적용가능
+- 상하좌우 padding 지정가능하고 적용
+- width, height는 적용안됨
+
+3. 인라인 블록 박스
+-img
+- width, height 적용이 됨
+- 상하좌우 margin, 상하좌우 padding 모두 적용이 됨
+-인라인 요소지만, 블록요소의 특성을 모두 가짐
+
+** 배치 변경
+1) display:block /inline /none 
+  -여백 생성
+2) float:left /right
+  -여백 없음
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+<button type="submit"
+                   "reset"
+                    "button"
+
+<a href="http://www.daum.net">                     
+   <button type="button" >
+    Learn HTML
+   </button>
+</a>
+
+<a href="http://www.daum.net">                     
+   <button type="button" >
+     <img src="img/lion1.jpg" />
+   </button>
+</a>
+==> <input type="image"   src="img/lion1.jpg" />
+
+<button type="button"  onclick="alert('버튼클릭');">
+클릭
+</button>
+
+8. textarea
+- 게시판 글 내용 입력시 사용
+- 여러 줄 입력
+<textarea rows=10   cols=30   name="txt">
+여기가 초기값
+</textarea>
+--------------------------------------------------------------
+9. select 
+- 여러개의 드롭메뉴
+- option 하고 같이 다님
+
+원하는 과목을 선택하시오<br/>
+ <select name="sel">
+   <option value="kor">국어</option>
+   <option value="eng">영어</option>
+   <option value="math">수학</option>
+</select>
+--------------------------------------------------------------
+<datalist>
+- list와 id값이 일치
+
+10. label 태그
+- 텍스트와 인풋박스를 하나로 묶음
+- for 값과 id 값이 일치해야 함
+
+<label for="txt">아이디 </label>
+<input type="text" name="id" id="txt"/>
+
+<label >아이디 
+<input type="text" name="id">
+</label>
+
+<label>
+		<input type="radio" name="china" value="1">
+		짜장면 <img src="media/jajang.png">
+	</label><br>
+	<label>
+		<input type="radio" name="china" value="2" checked>
+		짬뽕 <img src="media/jjambbong.png">
+	</label><br>
+	<label>
+		<input type="radio" name="china" value="3">
+		탕수육 <img src="media/tangsuyuk.png">
+	</label>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

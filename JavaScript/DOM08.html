@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+        function newtab(){
+            var txt = document.getElementById("txt");
+            var win = window.open("","","width=500, height=400");
+            win.document.open();
+            win.document.write(txt.value);
+            win.document.close();
+        }
+        </script>
+    </head>
+    <body>
+        <h2>HTML 문서 작성기 만들기</h2>
+        <div>
+            아래에 HTML문서를 작성하고 버튼을 클릭해보자<br>
+            <textarea cols="50" rows="10" id="txt"></textarea><br>
+            <input type="button" value="HTML문서 출력하기" onclick="newtab()">
+        </div>
+    </body>
+</html>

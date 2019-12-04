@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3>this 활용:</h3>
+        <hr>
+        <input type="button" onclick="change(this,'red','20pt')" value="버튼">      
+        <input type="button" onclick="change(this,'blue','50pt')" value="버튼">
+        <br>버튼 클릭하면 크기와 색 변경
+
+        <script>
+        function change(object, color, size){
+            object.style.fontSize=size;
+            object.style.color=color;
+
+        }
+
+        </script>
+    </body>
+</html>

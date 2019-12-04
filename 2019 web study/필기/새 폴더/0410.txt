@@ -1,0 +1,21 @@
+<<detail과 summary
+a:link  밑줄 없고, 글자색
+
+a:visited 밑줄 없고 글자색
+a:hover 밑줄 있고 글자색
+a:active 밑줄 있고 글자크기 기본보다 크게, 글자색
+
+<<sematic tag
+header
+nav
+section/ article
+footer
+aside
+-----------------------------------
+frameborder=0
+margin:0;
+
+
+
+
+

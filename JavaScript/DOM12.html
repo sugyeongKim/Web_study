@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+        span{
+            visibility: hidden;
+            color:blueviolet;
+        }
+        </style>
+        <script>
+        function show_hide(){
+            var span = document.getElementsByTagName("span");
+
+            for(var i=0;i<span.length;i++){
+                var att = window.getComputedStyle(span[i]);
+                var txt = att.getPropertyValue("visibility");
+                if(txt == "hidden"){
+                    span[i].style.visibility="visible";
+                }
+                else {
+                    span[i].style.visibility="hidden";
+                }
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <h3>다음 번 곳에 숨은 단어?</h3>
+        <button onclick="show_hide()">showhide</button>
+        <hr>
+        <ul>
+            <li>뭉쳐야 ( <span>찬다</span> )</li>
+            <li>동백꽃 ( <span>필 무렵</span> )</li>
+            <li>가나다라 ( <span>마바사</span> )</li>
+        </ul>
+    </body>
+</html>

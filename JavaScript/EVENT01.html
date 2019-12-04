@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>문서의 동작구성</title>
+        <script>
+             var p1;
+            function init(){
+                p1 =document.getElementById("p");
+                p1.addEventListener('mouseover',over);
+            }
+            function over(){
+                p1.style.backgroundColor="red";
+            }
+        </script>
+    </head>
+    <body onload=init()>
+        <p id="p" >
+            마우스 올리면 배경색 바뀌는 이벤트 발생</p>
+    </body>
+
+</html>

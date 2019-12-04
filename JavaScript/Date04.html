@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h4>일요일이면 오렌지 아니면 살먼</h4>
+
+        <script>
+        var date = new Date();
+        var week = ['일', '월', '화', '수', '목', '금', '토'];
+        document.write(week[date.getDay()]);
+        if(week[date.getDay()] == '일'){
+            document.body.style.background='orange';
+        }
+        else{
+            document.body.style.background='salmon';
+        }
+        </script>
+    </body>
+</html>

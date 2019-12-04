@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <script>
+        var list=["라면","물","계란","파","고춧가루"];
+
+        document.write("<ul>")
+        for(var i=0;i<list.length;i++){
+            document.write("<li>"+list[i]+"</li>");
+        }
+        document.write("</ul><hr>")
+
+        var num = new Array();
+        var a = new Array();
+        document.write("입력된 수의 배열<br>")
+        for(var i=0;i<5;i++){
+            num[i]=parseInt(prompt("정수 입력"));
+        }
+        for(var i=0;i<5;i++){
+            document.write(num[i]+" ");
+        }
+        document.write("<hr>역순으로 정렬된 배열<br>")
+
+        for(var i=0;i<num.length;i++){
+            a[i]=num[num.length-(i+1)];
+        }
+
+        for(var i=0;i<num.length;i++){
+            document.write(a[i]+" ");
+        }
+        
+        document.write("<br>");
+
+        num.reverse();
+        for(var i=0;i<5;i++){
+            document.write(num[i]+" ");
+        }
+
+        </script>
+    </body>
+</html>

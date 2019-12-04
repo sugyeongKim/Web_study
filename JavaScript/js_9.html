@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h2>산술연산</h2>
+        <hr>
+        <!-- x = 32
+        100 + x * 2 / 4 - 3 = 2
+        x / 10 =
+        x % 2 = -->
+        <script>
+            //? : 연산자 이용해서 두수의 차이를 구하시오
+            var x = 30;
+            var y = 25;
+            var big = (x>y)? x-y:y-x;
+            //document.write("x - y = ",big);
+            var grade = prompt("점수 입력");
+            //if (grade>=90) alert("등급 : A");
+            //else if(grade>=80) alert("등급 : B");
+            //else if(grade>=70) alert("등급 : C");
+            //else if(grade>=60) alert("등급 : D");
+            //else  alert("등급 : E");
+
+            switch (grade%10) {
+                case 10: case 9: alert("등급 : A");break;
+                case 8: alert("등급 : B");break;
+                case 7: alert("등급 : C");break;
+                case 6: alert("등급 : D");break;
+                default: alert("등급 : E");
+                break;
+            }
+
+            var fruits = prompt("과일 입력");
+            switch (fruits) {
+                case "apple": alert("3000원 입니다.");
+                    break;
+            
+                default: alert("없는 과일입니다");
+                    break;
+            }
+
+            var coffee = prompt("커피 종류 입력");
+            switch (coffee) {
+                case "카페라떼": alert("카페라떼는 4500원입니다"); break;
+                case "카페모카": alert("카페모카는 3500원입니다"); break;
+                case "녹차라떼": alert("녹차라떼는 3000원입니다"); break;
+                case "아메리카노": alert("아메리카노는 2500원입니다"); break;
+                default: alert("없는 메뉴입니다.")
+                    break;
+            }
+        </script>
+    </body>
+
+</html>

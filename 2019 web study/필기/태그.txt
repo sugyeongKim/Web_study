@@ -1,0 +1,267 @@
+1. 텍스트 관련 태그
+<h> : 글자크기 지정 (1~6) : 제목에 많이 사용, 숫자가 커질수록 크기는 작아진다.
+<br> : 줄 바꿈 태그, 닫는 태그가 없음. <br> , <br/> <--닫는 태그 없다는 표시
+<p> : 문단 나누는 태그, 줄 바꿈 태그222 / 앞 뒤로 한 줄씩 빈 줄이 들어감
+<hr> : 수평선 만드는 태그 (horizontal)
+      -- width , size, color
+strong, b : 강조할 때, 굵게
+em, i : 이탤릭체 기울임
+mark : 형광펜 나오기
+small 글씨 작게
+del 삭제
+ins 추가
+윗첨자 : sup
+아래첨자 : sub
+<, >는 태그로 인식하므로 표시가 안됬엇는데 html5는 되는듯
+<: &lt;
+>: &gt;
+공백 : &nbsp;
+º : &deg;
+=======================================================　 
+
+2. 목록 관련 태그
+1. ul : 순서 없는 목록 (unordered list)
+   li 태그로 아이템 지정
+   type : circle, desc, square
+
+2. ol : 순서 있는 목록 (ordered list)
+   li 태그로 아이템 지정
+   type : "1", "A", "a", "O", "I", "i" start="값"
+
+3. dl : 정의 목록 (definition list)
+ dt: 타이틀
+ dd: 본문
+
+=======================================================
+
+3. 테이블 태그
+<table> 테이블을 시작하겟다!
+<tr> : 행(row) 시작할때 
+<td> : 속의 내용. <tr> </tr> 사이의 내용 
+<th> : 제목용에 많이 쓰임. 글자 자동으로 굵게나옴 ( td 대신
+-border : 테두리
+-bordercolor : 테두리 색깔
+-width : 넓이
+-height : 길이
+-summary : 표의 설명
+
+align="center"
+
+##테이블 병합
+-rowspan="갯수". 위아래 표 병합
+-colspan="갯수". 좌우 표 병합
+
+-colgroup : 세로로 묶어서 스타일 지정
+   <col> 태그도 함께 사용 , 얘는 닫는 태그 X
+   tr태그 전에 사용함
+
+##시멘틱 태그 (semantic tag) : HTML5 에서 추가된, 의미론적 태그
+-기능은 없지만 필요하면 사용가능해야함
+1) caption : 표의 제목
+  -테이블 바로 안쪽에 작성
+2 figure : figcaption
+  -테이블, 이미지, 동영상등의 제목에 사용
+  -테이블 밖이나 안쪽에 작성
+
+테이블의 시멘틱 태그
+3 <thead> 제목
+  <tbody> 내용
+  <tfoot> 꼬리말
+
+<<detail & summary
+
+테이블의 제목 : <th> = <td> <b> <strong>
+
+===================================================
+
+그림, 사진
+webstudy안에 img 폴더에 저장
+상대경로 쓰는 습관 들이기
+
+<img src="img/라이언1.jpg"> -->상대경로
+현재 내가 작업하고 있는 곳의 하위폴더가 img이다.
+이 하위폴더 img폴더에 있는 라이언1.jpg를 사용한다는 뜻
+
+<img src="C:/webstudy/img/라이언.jpg"> -->절대경로
+
+=이미지 삽입
+<img src="이미지가 있는 폴더나 주소">
+-닫는 태그 X
+
+1. 옵션
+-width : 가로 크기
+-height : 세로 크기 
+(이미지 크기는 대부분 미리 정해와서 하는 경우 그닥..)
+-alt : 이미지가 안 보일 경우에 어떤 이미지인지 알려주는 것
+-title :이미지 설명 툴팁
+
+=====================================================
+
+HTML의 핵심적인 기능: 하이퍼링크
+HyperLink
+
+<a href="파일이나 그림 등등이 있는 위치(절대경로, 상대경로)">
+ 클릭할 텍스트나 이미지
+</a>
+
+1.옵션
+-target
+1) target="_blank" 
+   완전 새창으로
+2) target="_self" 
+   현재 자기 창에서 열림
+3) target="_parent"
+   부모창으로 링크    //모든 문서의 부모는 body
+4) target="top"
+   모든 프레임 취소하고 링크
+
+프레임 안나눴을땐 blank 제외 다 똑같당
+
+>>앵커 (anchor) (한 문서내에서의 링크)
+<a id="값">
+<a href = "값">
+
+=======================================================
+
+동영상, 멀티미디어 삽입
+- HTML5 전까지는 동영상이나 오디오 삽입하려면 별도의 플러그인 필요
+-video, audio
+
+<video src="비디오가 있는 위치" width= height= controls autoplay loop>
+
+<audio src="비디오가 있는 위치" width= height= controls autoplay loop>
+
+====================================
+
+>>media
+html5 전까지는 동영상이나 오디오를 삽입하려면 별도의 플러그인이 필요했음
+-video, audio
+<video src="비디오 위치" width="" height="" control autoplay loop>
+<audio src="오디오 위치" width="" height="" control autoplay loop>
+
+>> 인라인 프레임
+- 브라우저를 여러개의 프레임으로 분할하는 것
+- 광고에 많이 사용함.
+<iframe src="프레임에 들어갈 파일 위치" width, height>
+- target blank / self / parent / top
+- 내가 원하는 창에 표시하고 싶으면 : name 속성 지정
+
+===============================================
+
+>>시멘틱태그
+- 기능은 없지만 누구나 알아볼 수 있게 의미를 부여한 태그
+- 검색엔진시 의미를 전달
+- html문서의 구조 파악을 용이하게 함
+
+<p>
+    <date>
+        2019-03-22
+    </date>
+</p>
+
+1. header
+- 제목, 큰 글씨로(주로 h태그 사용)
+- 머릿말 표현
+
+2. nav
+- 메뉴, 네비게이션
+- 하이퍼링크를 모아둔 것
+
+3. section
+- 주제별로 컨텐츠를 묶을 때
+- 여러 section 사용가능
+
+4. article
+- 실제 내용이며, 독립적으로 사용할 때
+
+5. aside
+- 본문에서 벗어난 노트나 팁
+- 페이지의 오른쪽이나 왼쪽에 주로 배치
+
+6. footer
+- 꼬리말 영역, 주로 저자나 저작권 정보 삽입
+- <address> 주소삽입
+
+
+사용자가입력할수있는 form -> webform
+
+>> form tag <<
+  <form method = "post" action="login.jsp">
+1) method 방식
+  -get :url 뒤에 정보가 딸려가는 방식
+   http://localhost:8080/login/jsp?id=a&pass=1234
+ex) /search.naver?sm=top_hty&fbm=1&ie=utf8&query=탱고
+
+  -post : url 뒤에 정보 안나타남 (주로 로그인)
+//action : 내가 폼을 넘겼을 때 처리해주는 파일이나 사이트 주소
+//action="#" 딱히 " "안에 쓸게 없을때 #쓴당
+
+<input type="text" value="abc" name="user_id" size="15"/>
+  -value : 초기값
+  -size : 글자수  <영문기준>
+  -name : 변수. (백엔드 할떄 중요)
+1. <input type= "___">
+ 1) password
+ 2) submit : 전송 또는 제출
+ 3) reset : 취소하고 다시입력	
+ 4) radio : 하나만 선택 가능 name은 반드시 동일해야함
+   _checked_ 문서 실행시 미리 체크되어 있음
+ 5) checkbox : 여러개 선택이 가능/(name 동일)해서 서버로 넘겨줄때 배열ㄹ로 넘겨준다.
+ 6) file : 자료실 만들떄, 파일올리기 할때
+ 7) button : < button type = "submit"
+			"reset"
+			"button"	> 버튼이 될 이름or사진
+			</button>
+<a href = "주소"><button type="button">
+		<img src="주소"/>
+		</button>
+</a>
+<input type="image" src ="주소"/>
+
+<button type = "button onclick="alert('버튼클릭');>
+클릭
+</button> // 창 뜨는거
+
+
+ 8_ textarea
+-게시판 글 내용 입력시 사용
+- 여러 줄 입력 가능
+<textarea rows=10 cols=30 name="txt">
+	여기가 초기값
+</textarea>
+
+ 9_ select
+-여러개의 드롭메뉴
+-option 하고 같이 다님
+
+원하는 과목을 선택하시오 <br/>
+  <select name="sel" mutiple(여러개선택) size="숫자" (보이는개수)>
+     <option value="kor">국어</option>
+     <option value="kor">국어</option>
+     <option value="kor">국어</option>
+<select>
+비슷한데 다른거
+<datalist>
+-list와 id값이 일치해야한당
+
+ 10_ label 태그
+- 텍스트와 인풋박스를 하나로 묶음
+- for 값과 id값이 일치해야함
+<label for="txt">input-text</label>
+- 상자 안ㅇ눌러도 커서 뜨게하는 label
+for에서 주는 값과 id가 동일해야한다(안줘도 되긴함)
+
+11. fileset
+-묶음
+-legend와 세트
+
+12. <input>태그의 속성
+-required : 경고창 뜸, 버튼 잇어야댐
+-disabled : 삽입 불가능
+-autofocus : 자동으로 입력할수있게 깜빢깜빡
+-placeholder : 입력힌트
+<input type="search" autocomplete="on|off"/>
+-autocomplete : 자동완성기능
+---------------------------------------------------------------------
+ span height안먹음
+div 가능

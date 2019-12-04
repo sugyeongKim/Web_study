@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+        <script>
+                function change(){
+                    var spanTags = document.getElementsByTagName("span");
+                    var spanCnt = spanTags.length;
+        
+                    for(var i=0;i<spanCnt;i++){
+                        spanTags[i].style.color="red";
+                        spanTags[i].style.fontSize="17pt";
+                        spanTags[i].style.fontStyle="italic";
+                    }
+                }
+                </script>
+    </head>
+    <body>
+        <h3>내가 좋아하는 과일</h3>
+        <input type="button" onclick="change()" value="누르세여"><hr>
+        <div>
+                <span>처음부터</span> 다시 시작한다면 <br>
+                <span>행복한</span> 결말의 이야기가 될까<br>
+                아니 <span>서로</span> 만나지 않았다면<br>
+                다른 곳에서 웃고 <span>있었을까</span><br>
+                어렴풋이 <span>보이는</span> 어둠을 애써 외면하고서<br>
+                <span>불빛을</span> 따라 걷고 있다고 나는 믿고 있었어<br>
+                결국 절망이었어 앞이 보이지 않아<br>
+                알면서도 <span>그래</span> 멈출 수가 없었잖아<br>
+                사랑이 온 세상을 <span>삼켜버렸어</span><br>
+                깊은 <span>구덩이</span> 속에 밀어버렸어<br>
+            <span>우리는,</span> 너는, 나는 아무것도 할 수 없어<br>
+                천천히 눈을 <span>감겠지</span>
+        </div>
+
+    </body>
+</html>

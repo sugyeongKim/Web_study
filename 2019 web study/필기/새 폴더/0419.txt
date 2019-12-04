@@ -1,0 +1,56 @@
+<style>
+.a{
+text-indent: 3em;
+}
+.b{
+text-indent: 1em;
+text-align:center; 
+}
+
+글자색상 color:
+글자크기 font-size:
+글자체 font-family: "돋움", "휴먼옛체", "고딕";
+글자굵기 font-weight: bold;
+글자 스타일 font-style:italic;
+
+font: italic, bold, 16pt, "돋움";
+
+** 다단
+-column-count: 단 개수
+-column-gap: 30px; 간격
+-column-rule: 구분선 2px solid red
+--------------------------------------------------------------
+2. 배경관련 속성
+1)  background-color: 배경색
+2) background-image: url("이미지의 위치");
+3) background-repeat:no-repeat /repeat-x / repeat-y/repeat
+4) background-attachment: fixed /scroll
+5) background-position: left, top, right, bottom(배경의 시작위치)
+
+ex) body {
+  background: blue "bg.jpg" repeat-y left top scroll
+  }
+--------------------------------------------------------------
+3. border 관련 속성
+border-width: 굵기
+border-style: 종류 (solid /dotted /dashed/ double/
+    groove/ ridge / inset / outset)
+border-color: 색상
+ border: 2px solid red;
+
+1)border-style: dotted dashed solid double;
+=> top에서 시작해서 시계방향으로 이동
+ border-color:red yellow green blue;
+2) border-style: dotted dashed solid;
+=>top, right, bottom ,left: dotted
+3) border-style: dotted dashed;
+=> top, bottom: dotted  / left, right: dashed
+
+
+
+
+
+
+
+
+

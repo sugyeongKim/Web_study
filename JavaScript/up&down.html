@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form name="myform" method="post" action="#">
+        숫자: <input type="text" id="x">
+        <button type="button" onclick="guess()">확인</button><br>
+        추측회수: <input type="text" id="y">
+        힌트: <input type="text" id="sum">
+    </form>
+        <script>
+            var cnt=0;
+
+            function reset(){
+                cnt = 0;
+            }
+            
+            function guess(){
+                var num = 53;
+                var user_num = document.getElementById("x").value;
+                
+                document.getElementById("y").value=++cnt;
+
+                if(cnt>=5) {
+                    document.getElementById("sum").value = "실패. 다시 도전하려면 확인"
+                    reset();
+                    return 0;
+                }
+                if(user_num == num)
+                    document.getElementById("sum").value = "정답입니다";
+                else if (user_num > num)
+                    document.getElementById("sum").value = "DOWN"
+                else
+                    document.getElementById("sum").value = "UP"
+
+            }
+        </script>
+    </body>
+</html>

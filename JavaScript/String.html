@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+        var a= new String("Boys and Girls");
+        var b = "!!";
+
+        document.write("a : "+a+"<br>");
+        document.write("b : "+b+"<br><hr>");
+
+        document.write(a.charAt(0) + "<br>");//B
+        document.write(a.concat(b, "입니다") + "<br>");//!!입니다
+        document.write(a.indexOf("s") + "<br>");//3
+        document.write(a.indexOf("And") + "<br>");//없으면 -1 리턴
+        document.write(a.slice(5, 8) + "<br>");//
+        document.write(a.substr(5, 3) + "<br>");//
+        document.write(a.toUpperCase(0) + "<br>");
+        document.write(a.replace("and", "or") + "<br>");
+        document.write("      jim            ".trim()+"<br><hr>");
+
+        var sub = a.split("  ");
+        document.write("a를 빈칸으로 분리<br>");
+        for(var i=0;i<sub.length;i++)
+            document.write("sub"+i+"="+sub[i]+"<br>");
+
+        document.write("<hr>String 메소드를 실행 후 a와 b 변함 없음<br>");
+        document.write("a : "+a+"<br>");
+        document.write("b : "+b+"<br>");
+        </script>
+    </body>
+</html>

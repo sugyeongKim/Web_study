@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        /*var account = new Object();
+        account.owner="kim";
+        account.code=111;
+        account.balance=3500;
+     
+        function deposit (money){this.balance+=money; return this.balance;}
+        function withdraw(money){return this.balance-=money; return balance;}
+        
+        account.deposit=deposit;
+        account.withdraw=withdraw;
+
+        account.deposit(100);
+        //account.withdraw(500);
+            for(var money in account){
+                alert(account[money]);
+            }*/
+
+
+        var account = {
+            'owner' : 'kim',
+            'code' : '111',
+            'balance' : 3500,
+            deposit : function(money){this.balance+=money; 
+                                        return this.balance;},
+            withdraw : function(money){return this.balance-=money;}
+        }
+
+        var result = account.deposit(500);
+        document.write(account.owner+"의 잔액: "+result);
+        </script>
+    </body>
+</html>

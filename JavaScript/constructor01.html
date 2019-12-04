@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>생성자 사용해서 객체 생성</title>
+    </head>
+    <body>
+        <h3>생성자 사용해서 객체 생성</h3>
+        <hr>
+        <script>
+        //student 생성자 만ㄱ들어서 (name, score, getGrade())
+        //getGrade(): 80이상이면 A 리ㅓㅌㄴ, 아님 F리턴
+        
+
+            function Student(name, score){
+                this.name=name;
+                this.score=score;
+                this.getGrade= function() {
+                    if(this.score >= 80)
+                        return "A";
+                    else return "F";
+                }
+            }
+            var kim=new Student('kim',70);
+            var lee=new Student('lee',89);
+            document.write(kim.name+"= "+kim.getGrade()+"<br>");
+            document.write(lee.name+"= "+lee.getGrade());
+
+        
+        </script>
+    </body>
+</html>

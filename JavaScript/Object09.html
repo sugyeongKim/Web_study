@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+             
+             var bookArray = new Array(5);
+
+             for(var i=0;i<5;i++){
+                var book= new Object();
+                var input=prompt("제목, 저자, 가격 입력");
+                var info = input.split(',');
+                book.title=info[0];
+                book.author=info[1];
+                book.price=parseInt(info[2]);
+
+                bookArray[i]=book;
+             }
+
+             var max=bookArray[0];
+
+             for(var i=0;i<bookArray.length;i++){
+                if(max.price < bookArray[i].price){
+                     max=bookArray[i];
+                 }
+                 document.write("제목: "+bookArray[i].title+", 저자: "+bookArray[i].author+", 가격: "+bookArray[i].price+"<br>");
+             }
+
+             for(var i=1;i<bookArray.length;i++){
+              
+             }
+
+             document.write("<hr>가장 비싼 책: "+max.title+", 가격: "+max.price);
+            
+
+        </script>
+    </body>
+</html> 2e

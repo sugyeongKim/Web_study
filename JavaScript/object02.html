@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <script>
+            /*var degree = new Array(5);
+            var sum=0;
+            for(var i = 0 ; i<5;i++){
+                sum+=parseInt(prompt("온도 입력>>"))
+            }
+            alert("평균 온도"+sum/5);*/
+            function pr (msg, arr){
+                document.write(msg + arr.toString() + "<br>");
+            }
+
+            var a = new Array("Kim", "Lee", "Park");
+            var b = new Array("Chang");
+            var c;
+
+            pr("배열 a = ", a);
+            pr("배열 b = ", b);
+            document.write("<hr>");
+
+            c = a.concat(b);
+            pr("c = a.concat(b) 후 c = ", c);
+            pr("c = a.concat(b) 후 a = ", a);
+            // Kim, Lee, Park, Chang
+            // Kim, Lee, Park, Chang
+
+            c = a.join("##") // a.join() 이면 자동으로 , 삽임
+            pr("c = a.join()후 c = ", c);
+            pr("c = a.join() 후 a = ", a);
+            //Kim##Lee##Park
+            //Kim, Lee, Park
+
+            c = a.reverse()  // 원본(a)이 변경됨
+            pr("c = a.reverse() 후 c = ", c);
+            pr("c = a.reverse() 후 a = ", a);
+            //kraP eeL miK // Park Lee Kim
+            //Kim Lee Park // Park Lee Kim
+
+            c = a.slice(1, 2);
+            pr("c = a.slice() 후 c = ", c);
+            pr("c = a.slice() 후 a = ", a);
+            //Lee
+            //Kim Lee Park // Park Lee Kim
+
+            c = a.sort(); // 원본(a) 변경
+            pr("c = a.sort() 후 c = ", c);
+            pr("c = a.sort() 후 a = ", a);
+            //Kim Lee Park
+            //Kim Lee Park
+
+            c= a.toString();
+            document.write("a.toString() : " + c);
+        </script>
+    </body>
+</html>

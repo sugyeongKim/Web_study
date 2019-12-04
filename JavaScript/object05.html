@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+       //1 리터럴
+        var car = {
+            model : '람보르기니',
+            speed : 369,
+            color : "검은색",
+            brake : function () {return this.speed-=10;},
+            accel : function () {return this.speed+=10;}
+        }
+        document.write(car.color+" "+car.model+", 원래 속도: "+car.speed+", 가속: "+car.accel()+"<br>");
+
+
+       //2 생성자
+
+      function Car(model, speed, color){
+        this.model=model;
+        this.speed=speed;
+        this.color=color;
+        this.brake = function () {return this.speed-=10;}
+        this.accel = function () {return this.speed+=10;}
+       }
+       var car1 = new Car("붕붕이",333,"파란색");
+       document.write(car1.color+" "+car1.model+", 원래 속도: "+car1.speed+", 가속: "+car1.accel());
+        </script>
+    </body>
+</html>

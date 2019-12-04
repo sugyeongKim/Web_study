@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <script>
+            function cal(){
+                exp = document.getElementById("input").value;
+                document.getElementById("result").value=eval(exp);
+            }
+        </script>
+    </head>
+    <body>
+        <h3>onclick, 계산기 만들기</h3>
+        <hr>
+        식: <input type="text" id="input" ><br>
+        값: <input type="text" id="result">
+        <input type="button" value="계산" onclick="cal()">
+    </body>
+</html>

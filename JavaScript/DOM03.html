@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h3>CSS스타일 동적 변경</h3>
+        <hr>
+        <br>
+        <span style="color:blue">이것은</span>
+        <span id="word" style="color:red">문장입니다.</span>
+        <br><br>
+        <input type="button" value="스타일변경" onclick="change();">
+
+        <script>
+    
+        function change(){
+            var word = document.getElementById("word");
+
+            word.style.display="block";
+            word.style.width="200px"
+            word.style.margin="20px";
+            word.style.fontSize="25pt";
+            word.style.color="green";
+            word.style.border="3px dotted red";
+        }
+
+        </script>
+    </body>
+</html>

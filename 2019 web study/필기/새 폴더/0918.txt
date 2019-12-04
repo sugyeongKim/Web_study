@@ -1,0 +1,19 @@
+<<반응형 웹
+- 어느 기기든 동일한 화면을 표시
+- pc, 태블릿, 노트북, 모바일
+-media쿼리: 반응형 웹을 만들어 주는 쿼리
+1) css에 포함
+2) css를 외부파일로 링크시켜 포함 (얘를 많이 써
+<div class=center>
+<div class= left>
+
+<div class=right>
+
+
+
+
+
+
+
+
+

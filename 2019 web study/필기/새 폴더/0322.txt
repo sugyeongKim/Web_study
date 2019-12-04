@@ -1,0 +1,129 @@
+<<동영상, 멀티미디어 삽입
+-5 전까지는 동영상이나 오디오 삽입하려면 별도의 플러그인이 필요
+- video , audio
+<video src="비디오가 있는 위치" width= height   controls   autoplay loop>
+<audio src="오디오가 있는 위치"   controls   autoplay loop>
+---------------------------------------------------------------------------------------------
+
+<<인라인 프레임
+-브라우저를 여러 개의 프레임으로 분할 하는 것
+-광고에 많이 사용
+<iframe src="프레임에 들어갈 파일위치" width, height >
+
+--target: blank /self /parent /top
+-내가 원하는 창에 표시하고 싶을 때: name 속성 지정
+
+-frame.html
+<iframe src="menu.html" width="350" height="400" name="left">
+<iframe src="main.html" width="350" height="400" name="right">
+
+-menu.html
+<a href="http://www.daum.net">다음</a>
+<a href="http://www.daum.net">다음</a>
+<a href="http://www.daum.net">다음</a>
+
+-main.html
+<iframe src="topu.html" width="950" height="150" name="top">
+<iframe src="center.html" width="950" height="150" name="center">
+
+-----------------------------------------------------------------------------------------------
+<<시멘틱 태그(semantic tag)
+-기능은 없지만 누구나 알아볼 수 있게 의미를 부여하는 태그
+-검색엔진시 의미를 전달
+-html문서의 구조 파악을 용이하게 함
+
+<p>
+  <date>
+   2019-03-22
+  </date>
+</p>
+
+---------------------------------------------------------------------------------
+1. <header>
+-제목, 큰 글씨(h태그 사용), 머리말 표현
+
+2. <nav> :navigation 
+- 하이퍼링크를 모아놓은 것
+- 주로 메뉴에 사용
+
+3. <section> :
+- 주제별로 컨텐츠를 묶을 떄
+- 여러 section 사용가능
+
+4. <article>
+- 실제 내용이며 독립적으로 사용가능 할 때
+
+5. <aside>
+- 본문에서 약간 벗어난 노트나 팁
+- 페이지의 오른쪽이나 왼쪽에 주로 배치
+
+6. <footer>
+ - 꼬리말 영역, 주로 저자나 저작권 정보 삽입
+ -<address> 주소 삽입</address>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

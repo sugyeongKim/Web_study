@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+           //1.리터럴
+            var book1 = {
+                    'title' : '연금술사',
+                    'author' : '파울로 코엘료',
+                    'price' : 9900,
+                    read : function(){
+                        document.write("지금 읽는 책: "+this.author+"의 "+this.title+"<br>");
+                    },
+                    buy : function(){
+                        document.write("가격: "+this.price+"원 <hr>");
+                    }
+            }
+
+           //2.object
+           var book2 = new Object();
+           book2.title="어린왕자";
+           book2.author="생택쥐페리";
+           book2.price=10000;
+           book2.read = function(){ document.write("지금 읽는 책: "+this.author+"의 "+this.title+"<br>");}
+           book2.buy = function(){document.write("가격: "+this.price+"원 <hr>");}
+
+           //3. object == {}
+
+           var book3 = {};
+           book3.title="가나다라";
+           book3.author="마바사";
+           book3.price=15000;
+           book3.read = function(){ document.write("지금 읽는 책: "+this.author+"의 "+this.title+"<br>");}
+           book3.buy = function(){document.write("가격: "+this.price+"원 <hr>");}
+        
+
+           //4.생성자
+
+            function Book4(title, author, price){
+                this.title=title;
+                this.author=author;
+                this.price=price;
+                this.read= function (){ document.write("지금 읽는 책: "+this.author+"의 "+this.title+"<br>");}
+                this.buy=function (){document.write("가격: "+this.price+"원 <hr>");}
+            }
+
+            var book4 = new Book4("레몬", "권여선", 25000);
+
+           book1.read(); book1.buy();
+           book2.read(); book2.buy();
+           book3.read(); book3.buy();
+           book4.read(); book4.buy();
+
+        </script>
+    </body>
+</html>

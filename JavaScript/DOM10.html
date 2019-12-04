@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script>
+        function cntborder(){
+            var border = document.getElementsByTagName("span");
+            var cnt = border.length;
+            alert(cnt);
+        }
+
+        function cntp(){
+            var pTags = document.getElementsByTagName("p");
+            var cnt = pTags.length;
+            alert(cnt);
+        }
+
+        </script>
+    </head>
+    <body>
+        <h3>자바스크립트란</h3>
+        <input type="button" value="border" onclick="cntborder()">
+        <input type="button" value="p" onclick="cntp()">
+         <hr>
+        <span id="border"style="border:1px dotted blue">처음부터 다시 시작한다면 행복한 <<span>결말의 이야기가 될까 아니 서로 만나지 않았다면 다른 곳에서<br>웃고 있었을까 어렴풋이 보이는 어둠을 애써 외면하고서
+불빛을 따라 걷고 있다고</span><span id="border"style="border:1px dotted blue">나는 믿고 있었어 결국 절망이었어 앞이 보이지 않아
+알면서도 그래 멈출 수가 없었잖아<br>
+
+사랑이 온 세상을 삼켜버렸어</span>
+깊은 구덩이 속에 밀어버렸어
+우리는, <p>너는, 나는 아무것도 할 수 없어</p>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<<position
+float:left
+1. static :모바일화면 작성시 사용
+2. relative(상대적인): 기준위치: 부모 또는 자신의 원래 위치
+3. absolute(절대적인)
+4. fixed(고정)
+
+* left, top, right, bottom은 position 속성을 사용해야 적용가능
+div{
+position:abolute;
+left:30px;
+top:50px;
+}
+
+----------------------------------------------------------------------
+4. fixed
+-font awesome cdn
+
+3. absolute
+*가운데 배치: #box5{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+    }
+2. relative
+: 부모는 relative, 자식은 absolute
+*, 자식은 부모의 범위를 벗어날 수 없음
+
+
+
+
+

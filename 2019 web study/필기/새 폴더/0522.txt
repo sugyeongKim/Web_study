@@ -1,0 +1,45 @@
+a:link
+a:visited
+a:hover
+a:active
+------------------------------------------------
+1. 박스내부의 중앙정렬
+가로의 중앙정렬: text-align:left/ center /right
+세로의 중앙정렬: height==line-height 동일하게 설정
+
+2. 문서가 항상 브라우저의 중앙에 배치되는 정렬
+1) <div>를 이용해서 전체를 블록박스로 지정
+   <body><div>.......</div></body>
+2) div의 width 속성 지정하고
+margin:0 auto로 지정
+---------------------------------------------------------------------------
+<<positioning(배치)
+1. float: left/right
+부모를 기준으로 왼쪽 또는 오른쪽으로 배치
+: 세로배치를 가로로 만드는것
+
+1) display:inline
+2) float:left
+
+<body>
+  <div class="container">
+    <header>Header</header>
+    <div class="inner">
+      <section>section1</section>
+      <section>section2</section>
+      <section>section3</section>
+    </div>
+    <footer>
+      <address>
+        Copyright by K, Seoul, Korea
+      </address>
+    </footer>
+</body>
+
+
+
+
+
+
+
+

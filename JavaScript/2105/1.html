@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+ 
+
+        <script>
+            function food(){
+                var noodle = prompt("텍스트를 입력하세요");
+                var p = document.getElementById("food");
+                p.style.backgroundColor="black";
+                p.style.color="white";
+                p.style.display="inline";
+                p.innerText = noodle;
+            }
+        </script>
+    </head>
+
+    <body>
+        <h4>라면을 먹어봅시다</h4><hr>
+        <p id="food" onclick="food()">제일 맛있는 라면은 무엇일까요?</p>
+    </body>
+</html>

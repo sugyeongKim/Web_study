@@ -1,0 +1,78 @@
+2019년수업->설치파일-> tomcat, vscode
+크롬에 http://localhost:8080/ ->고양이 그림
+
+--웹서버 tomcat 설치
+--에디터 설치
+
+vscode
+1. auto rename tag
+bracket Pair colorizer 
+Hightlight-selections-vscode
+color-highlight
+beautify
+live html previewer
+-----------------------------------------------------
+html5
+1. 대소문자 구분안한다.
+2. 구조
+ <!doctype html>  <-- 이 문서는 html5로 작성한다.
+   <html>
+       <head>
+          <title>  <--제목표시줄에 제목 표시
+          </title>
+       </head>
+       <body>
+        내용
+        </body>
+   </html>
+1) 태그는 쌍으로 이루어진다.  시작태그 있으면끝나는 태그가 있다.
+2) 닫는 태그가 없는게 있어: br, img ....이런거
+----------------------------------------------------------------------------------------
+
+**파일실행방법
+1) 클라이언트에서 실행: 탐색기에서 그냥 실행
+
+2) 웹서버에서 실행: 웹서버에 올려서 도메인으로 실행
+C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\ROOT에 파일복사
+C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\ROOT\test
+http://localhost:8080/test/html1_1.html
+==>  tomcat의 root폴더(C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps\ROOT)
+밑의 test폴더의 html1_1.html을 실행해라. 
+
+3) vscode내부적으로 실행 (live  html ...) --> show side preview
+
+1. 텍스트관련 태그
+h, p, br, hr, blockquote, pre
+
+1) h: 글자크기 지정(1-6) : 제목에 많이 사용, 숫자가 커질수록 글자는 작아짐
+2) br: 줄 바꿈 태그, 닫는 태그가 없음  <br>   , <br/>
+3) p: 문단 나누는 태그, 줄바꿈태그 / 앞 뒤로 한 줄씩 빈 줄이 들어감
+4) hr: 수평선 만듬(horizontal)  
+   --  width: 넓이조정,  size: 높이조정 ,   color
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

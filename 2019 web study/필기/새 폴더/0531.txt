@@ -1,0 +1,30 @@
+<<position
+1. fixed
+2. absolute
+3. relative:
+  부모가 relative, 자식은 absolute
+ 자식은 부모의 범위를 벗어날수 없음
+
+<div id="parent" >   
+      <div class="top">메뉴 항목</div> 
+      <div id="child">
+          <div class="menu">서브 메뉴1</div> 
+          <div class="menu">서브 메뉴2</div> 
+          <div class="menu">서브 메뉴3</div>    
+      </div>     
+   </div>드롭다운 메뉴
+
+<style>
+.top{}
+#parent{}
+#child{}
+.menu{}
+#parent:hover #child{}
+#child .menu:hover{}
+</style>
+
+
+
+
+
+
