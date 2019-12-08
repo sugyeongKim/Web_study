@@ -552,4 +552,15 @@ window.onload()
     var img = new Image();
 3) 이미지객체의 속성: width, height, src
 
+--------------------------------------------------------------------------------------
+<<onfocus / onblur 
+-onfocus : 포커스를 받게 될 때 발생되는 이벤트
+-onblur: 포커스를 잃었을 때 발생되는 이벤트
+--------------------------
+<<radio 버튼
+1) name을 동일하게 부여
+2)document.getElementsByName으로 가져오기
+3)리턴값은 컬렉션(배열)이다
+4)선택된 것을 알아내기 위해서는 checked 속성 사용
+<input type="radio" name="animal" value ="dog">
 

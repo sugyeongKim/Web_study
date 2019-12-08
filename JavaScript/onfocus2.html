@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script>
+        function chk() {
+            var a = document.getElementById("name");
+
+            if (a.value == "") {
+                alert("이름을 입력하세요");
+            }
+        }
+
+        function chk2() {
+            var b = document.getElementById('num');
+            if (b.value == "") {
+                alert("학번을 입력하세요")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>onfocus와 onblur</h3>
+    <hr>
+    <p>
+        이름 : <input type="text" id="name" onblur="chk()"><br>
+        학번 : <input type="text" id="num" onblur="chk2()">
+    </p>
+</body>
+
+</html>
