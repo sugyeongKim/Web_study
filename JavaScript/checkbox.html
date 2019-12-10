@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title></title>
     <script>
-        function add(obj) {
+      function add(obj) {
+        var a = document.getElementsByName("cap");
+      }
+    </script>
+  </head>
 
-        }
-    </script>>
-</head>
-
-<body>
+  <body>
     <h3>자동계산</h3>
-    <hr>
-    <input type="checkbox" name="cap" onclick="add(this)"> 모자 만원
-    <input type="checkbox" name="cap" onclick="add(this)"> 구두 3만원
-    <input type="checkbox" name="cap" onclick="add(this)"> 명품가방 7만원
-    <br>
-    <input type="text" id="result">
-
-</body>
-
+    <hr />
+    <input type="checkbox" name="cap" onclick="add(this)" /> 모자 만원
+    <input type="checkbox" name="cap" onclick="add(this)" /> 구두 3만원
+    <input type="checkbox" name="cap" onclick="add(this)" /> 명품가방 7만원
+    <br />
+    <input type="text" id="result" />
+  </body>
 </html>
