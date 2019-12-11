@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <script>
+        function keyevent(obj) {
+            console.log("키 값: " + event.keyCode + "," + String.fromCharCode(event.keyCode));
+            console.log();
+        }
+    </script>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td>onKeyDown</td>
+            <td><input type="text" onKeyDown="javascript:keyevent(this)"></td>
+        </tr>
+        <tr>
+            <td>onKeyUp</td>
+            <td><input type="text" onkeyup="javascript:keyevent(this)"></td>
+        </tr>
+        <tr>
+            <td>onKeyPress</td>
+            <td><input type="text" onkeypress="javascript:keyevent(this)"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

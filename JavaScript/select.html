@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <script>
+        function change() {
+            var sel = document.getElementById("sel");
+            var value = sel.options[sel.selectedIndex].value;
+            var image = document.getElementById("img");
+            if (value == "apple") {
+                image.src = "../2019 web study/img/apple.jpg"
+            } else if (value == "banana") {
+                image.src = "../2019 web study/img/banana.jpg"
+            } else if (value == "mango") {
+                image.src = "../2019 web study/img/mango.jpg"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <select name="fruit" id="sel" onchange="change()">과일을 선택하세요
+        <option value="apple">apple</option>
+        <option value="banana">banana</option>
+        <option value="mango">mango</option>
+    </select>
+    <img src="../2019 web study/img/apple.jpg" id="img">
+</body>
+
+</html>

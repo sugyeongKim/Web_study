@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <script>
-      function add(obj) {
-        var a = document.getElementsByName("cap");
-      }
-    </script>
-  </head>
 
-  <body>
-    <h3>자동계산</h3>
-    <hr />
-    <input type="checkbox" name="cap" onclick="add(this)" /> 모자 만원
-    <input type="checkbox" name="cap" onclick="add(this)" /> 구두 3만원
-    <input type="checkbox" name="cap" onclick="add(this)" /> 명품가방 7만원
-    <br />
-    <input type="text" id="result" />
-  </body>
+<head>
+  <title></title>
+  <script>
+    function add(obj) {
+      var chk = document.getElementsByName("cap");
+      var res = document.getElementById("result");
+      var sum = 0;
+      if (chk[0].checked == true) {
+        sum += 10000;
+        result.value = sum;
+      }
+      if (chk[1].checked == true) {
+        sum += 30000;
+        result.value = sum;
+      }
+
+      if (chk[2].checked == true) {
+        sum += 70000;
+        result.value = sum;
+      }
+
+      if (chk[0].checked == false && chk[1].checked == false && chk[2].checked == false) {
+        sum = 0;
+        result.value = sum;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h3>자동계산</h3>
+  <hr />
+  <input type="checkbox" name="cap" onclick="add(this)" /> 모자 만원
+  <input type="checkbox" name="cap" onclick="add(this)" /> 구두 3만원
+  <input type="checkbox" name="cap" onclick="add(this)" /> 명품가방 7만원
+  <br />
+  <input type="text" id="result" />
+</body>
+
 </html>

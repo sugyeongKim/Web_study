@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script>
+        function cal() {
+            if (event.keyCode == 13) {
+                exp = document.getElementById("input").value;
+                document.getElementById("result").value = eval(exp);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>계산기 만들기</h3>
+    <hr>
+    수식을 입력하고, enter를 입력하세요<br>
+    식: <input type="text" id="input" onkeypress="cal()"><br>
+    값: <input type="text" id="result">
+</body>
+
+</html>
