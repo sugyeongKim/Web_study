@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .btn {
+            width: 70px;
+            height: 50px;
+            margin: 0px 10px 4px 0px;
+            border: 2px solid black;
+            background-color: black;
+            color: white;
+            font-size: 14pt;
+            text-align: center;
+            /* box-shadow: 1px 1px 1px 1px #FF0077; */
+        }
+
+        #result {
+            width: 317px;
+            height: 40px;
+            margin-bottom: 10px;
+            margin-left: 2px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            padding-left: 4px;
+        }
+    </style>
+
+    <script>
+        var exp = ""
+
+        function cal(input) {
+            exp = exp + input;
+            document.getElementById("result").value = exp;
+        }
+
+        function Root() {
+            var num = parseInt(document.getElementById("result").value);
+            document.getElementById("result").value = Math.sqrt(num);
+        }
+
+        function abs() {
+            var num = parseInt(document.getElementById("result").value);
+            document.getElementById("result").value = Math.abs(num);
+        }
+
+        function back() {
+            var length = exp.length;
+            exp = exp.substr(0, length - 1);
+            document.getElementById("result").value = exp.substr(0, length - 1);
+        }
+
+        function clearDisplay() {
+            exp = "";
+            document.getElementById("result").value = exp;
+        }
+
+        function compute() {
+            document.getElementById("result").value = eval(exp);
+        }
+    </script>
+</head>
+
+<body>
+    <h4>계산기 만들기</h4>
+    <hr>
+    <input type="text" id="result">
+    <table>
+        <tr>
+            <td><input type="button" class="btn" value='BACK' onclick="back()"></td>
+            <td><input type="button" class="btn" value='CE' onclick="clearDisplay()"></td>
+            <td><input type="button" class="btn" value='C' onclick="clearDisplay()"></td>
+            <td><input type="button" class="btn" value='=' onclick="compute()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="btn" value='7' onclick="cal('7')"></td>
+            <td><input type="button" class="btn" value='8' onclick="cal('8')"></td>
+            <td><input type="button" class="btn" value='9' onclick="cal('9')"></td>
+            <td><input type="button" class="btn" value='/' onclick="cal('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="btn" value='4' onclick="cal('4')"></td>
+            <td><input type="button" class="btn" value='5' onclick="cal('5')"></td>
+            <td><input type="button" class="btn" value='6' onclick="cal('6')"></td>
+            <td><input type="button" class="btn" value='*' onclick="cal('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="btn" value='3' onclick="cal('3')"></td>
+            <td><input type="button" class="btn" value='2' onclick="cal('2')"></td>
+            <td><input type="button" class="btn" value='1' onclick="cal('1')"></td>
+            <td><input type="button" class="btn" value='-' onclick="cal('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="btn" value='0' onclick="cal('0')"></td>
+            <td><input type="button" class="btn" value='+' onclick="cal('+')"></td>
+            <td><input type="button" class="btn" value='ROOT' onclick="Root()"></td>
+            <td><input type="button" class="btn" value='ABS' onclick="abs()"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
