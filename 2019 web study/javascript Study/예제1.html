@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>자바스크립트 예제 1</title>
+    <!-- 예제1 -->
+    <!-- *toString.call();은 js에서 타입을 체크할때 많이 씀 -->
+  <script>
+    function print(){
+    //filter, includes, from을 사용해서 문자열 'e'가
+    //포함된 노드로 구성된 배열을 만들어서 반환하기
+  
+      let list = document.querySelectorAll("li");
+      let listArray = Array.from(list);//li 노드로 구성된 배열
+      let eArray= listArray.filter(function(v){
+       return v.innerText.includes("e");
+      });
+      console.log("e가 포함된 배열 갯수: "+eArray.length);
+    }
+  </script>
+  </head>
+  <body onload="print()">
+    <ul>
+      <li>apple</li>
+      <li>orange</li>
+      <li>banana</li>
+      <li>strawberry</li>
+    </ul>
+  </body>
+  </html>
