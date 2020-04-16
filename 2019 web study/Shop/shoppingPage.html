@@ -4,58 +4,76 @@
         <title>쇼핑몰</title>
         <style>
             
+            #container{
+                background-color: #f2e9e1;
+            }
+            #image{
+                height:130px;
+                background-image: url("image/cho.jpg");
+            }
+
             #header{
-                height:200px;
-                line-height: 200px;
+                height:70px;
+                line-height: 70px;
                 text-align: center; 
-                background-image : url("image/천지해.PNG") ;
-                font-size: 30px;
+                background-color: #f2e9e1;
+                font-size: 23pt;
                 text-shadow: -2px 0 black,
                                 0 2px black,
                                 2px 0 black,
                                 0 -2px black;
                 color: white;
+                margin:auto;
+                border: solid 1px #f0dac7;
             }
 
             #menu{
                 display: inline-block;
                 width:15%;
-                height:600px;
-                background-color: skyblue;
+                height:650px;
+                background-color: #f2e9e1;
                 float: left;
 
             }
 
             #content{
                 display: inline-block;
-                width:70%;
-                height:540px;
-
+                width:65%;
+                height:650px;
+                background-color: #f2e9e1;
+                float:left;
             }
 
             #aside{
                 display: inline-block;
-                width:15%;
-                height:600px;
+                width:20%;
+                height:650px;
                 float: right;
-                background-color: skyblue;
-                text-align: center;
+                background-color: #f2e9e1;
             }
 
             #footer{
                 display: inline-block;
                 float: left;
+                text-align: center;
                 width:100%;
-                height:150px;
-                background-color: aquamarine;
+                line-height: 120px;
+                height:120px;
+                background-image: url("image/cho.jpg");
+                text-shadow: -2px 0 black,
+                                0 2px black,
+                                2px 0 black,
+                                0 -2px black;
+                color:white;
+                font-size: 12pt;
             }
 
             .menu1{
                 text-align: center;
-                height: 120px;
-                line-height: 120px;
-                font-size: 20px;
-                background-color: skyblue;
+                height: 70px;
+                line-height: 70px;
+                font-size: 18pt;
+                background-color: #f2e9e1;
                 text-shadow: -2px 0 black,
                                 0 2px black,
                                 2px 0 black,
@@ -64,36 +82,100 @@
             }
 
             .menu1:hover{
-                background-color: darkcyan;
+                background-color: #e6c4a6;
             }
 
              a:link, a:visited,a:hover,a:active{
             text-decoration-line: none;
+            text-shadow: -2px 0 black,
+                                0 2px black,
+                                2px 0 black,
+                                0 -2px black;
             color:white;
         }
         
+        #login_form {padding:15px; margin-right:10px; margin-top:10px;}
+.login_header {overflow: hidden;  font-size: 12px; height:30px; }
+.login_header .lh_check {float:left;padding-right:15px;}
+.login_header .lh_ip {float:left;}
+.login_header .lh_ip em {color:#0093bd; text-decoration: underline; padding-left:5px; font-style: normal;}
+
+.login_content{position: relative; }
+.login_content .lc_text {display: inline;}
+.login_content .lc_btn {width:75px; height:45px; position: absolute; top:0px; right:0;}
+.login_content .input_text { width:179px; height:16px; margin-bottom:5px;
+     border: 1px solid #bebebe; margin-bottom: 3px; }
+
+.login_footer {margin-top:5px;}
+.login_footer li {display: inline; padding-left: 2px;}
+.login_footer li a {font-size: 12px;}
+
+.footer{text-align: center; padding:25px;}
+.footer ul{margin-bottom:2px;  }
+.footer ul li {display: inline; position: relative; padding:0 7px;}
+.footer li::before{content:''; width:1px; height:12px;
+position: absolute; left:0; top:2px; display: inline;}
+.footer li:first-child:before{ width:0; height:0;}
+.footer address {text-align: center;}
+
         </style>
     </head>
     <body>
-        <div id="container">
-            <div id="header"><a href="basePage.html" target="iframe">天地海</a></div>
-            <div id="menu">
-                <div class="menu1"><a href="joinPage.html" target="iframe">회원가입</a></div>
-                <div class="menu1"><a href="MyPage.html" target="iframe">마이페이지</a></div>
-                <div class="menu1"><a href="All_products.html" target="iframe">전체상품보기</a></div>
-                <div class="menu1"><a href="Recommend.html" target="iframe">추천상품</a></div>
-                <div class="menu1"><a href="basket.html" target="iframe">장바구니</a></div>
-            </div>
-            <div id="content">
-                <iframe src="basePage.html" frameborder="0" name="iframe" width="100%" height="600px"></iframe>
-            </div>
-            <div id="aside">광고<br>
-                <iframe src="http://justdancenow.com/" frameborder="0" width="200px" height="190px"></iframe><br>
-                <iframe src="https://lhs501.github.io/2019java/2019java.html#download" frameborder="0" width="200px" height="190px"></iframe>
-                <iframe src="https://justdancenow.com/" frameborder="0" width="200px" height="190px"></iframe>
-            </div>
-            <div id="footer">푸터</div>
+        <div id="image">
 
         </div>
+            <div id="header">
+                    <a href="basePage.html" target="iframe" class="title">Home</a>&nbsp; &nbsp; &nbsp;
+                    <a href="basePage.html" target="iframe" class="title">MyShop</a>&nbsp; &nbsp; &nbsp;
+                    <a href="basePage.html" target="iframe" class="title">Community</a>&nbsp; &nbsp; &nbsp;
+                    <a href="basePage.html" target="iframe" class="title">Q&A</a>&nbsp; &nbsp; &nbsp;
+            </div>
+            <div id="menu">
+                <div class="menu1"><a href="joinPage.html" target="iframe">Chocolate</a></div>
+                <div class="menu1"><a href="MyPage.html" target="iframe">Candy</a></div>
+                <div class="menu1"><a href="All_products.html" target="iframe">IceCream</a></div>
+                <div class="menu1"><a href="Recommend.html" target="iframe">Cookie</a></div>
+                <div class="menu1"><a href="basket.html" target="iframe">Jelly</a></div>
+                <div class="menu1"><a href="basket.html" target="iframe">Cake</a></div>
+                <div class="menu1"><a href="basket.html" target="iframe">Tea</a></div>
+            </div>
+            <div id="content">
+                <iframe src="basePage.html" frameborder="0" name="iframe" width="100%" height="100%"></iframe>
+            </div>
+            <div id="aside">
+                <form method="post" action="#" name="login_form" id="login_form">
+                <fieldset>
+                    <legend class="ir_pm"></legend>
+                    <div class="login_header">
+                        <div class="lh_check">
+                            <input id="infor_check" type="checkbox" class="input_check">
+                            <label for="infor_check">로그인 상태 유지</label>
+                        </div>
+                        <div class="lh_ip">
+                            IP 보안<em>ON</em>
+                        </div>
+                    </div>
+                    <div class="login_content">
+                        <div class="lc_text">
+                            <label for="uid" class="ir_pm">아이디</label>
+                            <input type="text" id="uid" name="uid"
+                                class="input_text" maxlength="20"style="width:150px"><br>
+                                <label for="upw" class="ir_pm">비밀번호</label>
+                             <input type="text" id="upw" name="upw"
+                                class="input_text" maxlength="20" style="width:150px">   
+                        </div>
+                        <button class="lc_btn" type="submit">로그인</button>
+                    </div>
+                    <div class="login_footer">
+                        <ul>
+                            <li><a href="#"><strong>회원가입</strong></a></li>
+                            <li><a href="#">아이디</a> &middot; <a href="#">비밀번호 찾기</a></li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+            <div id="footer">Copyright 2019. Kimsugyeong All Rights Reserved. 
+             </div>
     </body>
 </html>
